@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
       <div class="page-header__wrapper">
         <a class="page-header__logo" href="#">
-          <img src="http://placehold.it/150x100" alt="MISHKA">
+          <img src="img/logo-mobile.svg" alt="MISHKA">
         </a>
         <nav class="main-nav  main-nav--closed">
           <button class="main-nav__toogle" type="button">Открыть меню</button>
@@ -31,8 +32,12 @@
           <h1>Милые штуки ручной работы для дома</h1>
         </div>
         <ul class="preview__list">
-          <li class="preview__item  preview__item--interior"><a href="#">Предметы интерьера</a></li>
-          <li class="preview__item  preview__item--toy"><a href="#">Детские игрушки</a></li>
+          <li class="preview__item  preview__item--interior"><a href="#">Предметы интерьера<svg width="62" height="62">
+            <use xlink:href="img/icon-interior.svg"></use>
+          </svg></a></li>
+          <li class="preview__item  preview__item--toy"><a href="#">Детские игрушки<svg width="62" height="62">
+            <use xlink:href="img/icon-toy.svg"></use>
+          </svg></a></li>
         </ul>
       </section>
       <section class="products">
@@ -66,12 +71,24 @@
         <div class="advantages__wrapper">
           <h2 class="advantages__title">Коротко о нас</h2>
           <ul class="advantages__items">
-            <li class="advantages__item"><b>Экологически чистые материалы</b></li>
-            <li class="advantages__item"><b>Скандинавский стиль по российской цене</b></li>
-            <li class="advantages__item"><b>Увеличивает  лайки на фотографиях</b></li>
-            <li class="advantages__item"><b>Связано вручную с любовью и умилением</b></li>
-            <li class="advantages__item"><b>Поддержка отечественного производителя</b></li>
-            <li class="advantages__item"><b>Поставляется в подарочной упаковке</b></li>
+            <li class="advantages__item"><svg class="advantages-icon  advantages-icon--1" width="40" height="40">
+              <use xlink:href="img/icon-feature-1.svg"></use>
+            </svg><b>Экологически чистые материалы</b></li>
+            <li class="advantages__item"><svg class="advantages-icon  advantages-icon--2" width="40" height="40">
+              <use xlink:href="img/icon-feature-2.svg"></use>
+            </svg><b>Скандинавский стиль по российской цене</b></li>
+            <li class="advantages__item"><svg class="advantages-icon  advantages-icon--3" width="40" height="40">
+             <use xlink:href="img/icon-feature-3.svg"></use>
+            </svg><b>Увеличивает  лайки на фотографиях</b></li>
+            <li class="advantages__item"><svg class="advantages-icon  advantages-icon--4" width="40" height="40">
+              <use xlink:href="img/icon-feature-4.svg"></use>
+            </svg><b>Связано вручную с любовью и умилением</b></li>
+            <li class="advantages__item"><svg class="advantages-icon  advantages-icon--5" width="40" height="40">
+              <use xlink:href="img/icon-feature-5.svg"></use>
+            </svg><b>Поддержка отечественного производителя</b></li>
+            <li class="advantages__item"><svg class="advantages-icon  advantages-icon--6" width="40" height="40">
+              <use xlink:href="img/icon-feature-6.svg"></use>
+            </svg><b>Поставляется в подарочной упаковке</b></li>
           </ul>
         </div>
       </section>
