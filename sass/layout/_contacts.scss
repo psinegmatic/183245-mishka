@@ -1,0 +1,43 @@
+.contacts{
+  width: auto;
+  margin-bottom: 40px;
+  p{
+    display: flex;
+
+    margin-bottom: 30px;
+
+    line-height: 30px;
+
+    flex-wrap: wrap;
+    justify-content: space-between;
+    span{
+      padding-top: 30px;
+    }
+    a{
+      padding-top: 30px;
+      padding-right: 7px;
+
+      border-bottom: 1px solid #62D1BA;
+    }
+  }
+}
+
+.contacts-title h2{
+  font-size: 18px;
+}
+
+.contacts__wrapper{
+  box-sizing: border-box;
+  padding: 0 30px;
+
+  @include container;
+}
+
+.contacts__map{
+  overflow: hidden;
+
+  margin-bottom: 38px;
+  iframe{
+    border: 0;
+  }
+}

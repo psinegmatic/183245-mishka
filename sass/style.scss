@@ -1,1 +1,24 @@
-body { background: #FFD39B; }
+@import 'base/fonts.scss';
+@import 'base/base.scss';
+@import 'base/reset.scss';
+
+@import 'layout/advantages.scss';
+@import 'layout/catalog-promo.scss';
+@import 'layout/contacts.scss';
+@import 'layout/main-catalog.scss';
+@import 'layout/main-form.scss';
+@import 'layout/main-nav.scss';
+@import 'layout/page-footer.scss';
+@import 'layout/page-header.scss';
+@import 'layout/preview.scss';
+@import 'layout/products.scss';
+@import 'layout/reviews.scss';
+
+@import 'utils/mixins.scss';
+@import 'utils/variables.scss';
+
+
+@import 'components/btn.scss';
+
+
+

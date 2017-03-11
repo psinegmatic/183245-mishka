@@ -7,7 +7,7 @@ var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
 
-gulp.task("sass", function() {
+gulp.task("style", function() {
   gulp.src("sass/style.scss")
     .pipe(plumber())
     .pipe(sass())
@@ -20,7 +20,7 @@ gulp.task("sass", function() {
     .pipe(server.stream());
 });
 
-gulp.task("serve", ["sass"], function() {
+gulp.task("serve", ["style"], function() {
   server.init({
     server: ".",
     notify: false,
