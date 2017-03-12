@@ -15,7 +15,6 @@
     }
     a{
       padding-top: 30px;
-      padding-right: 7px;
 
       border-bottom: 1px solid #62D1BA;
     }
@@ -39,5 +38,21 @@
   margin-bottom: 38px;
   iframe{
     border: 0;
+  }
+}
+
+@media (min-width: 750px){
+  .contacts__wrapper{
+    display: flex;
+
+    @include container-tablet;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    a{
+      margin-bottom: 100px;
+    }
+  }
+  .contacts__title{
+    width: 100%;
   }
 }

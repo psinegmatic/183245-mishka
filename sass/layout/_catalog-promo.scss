@@ -1,21 +1,25 @@
 .catalog-promo{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    border: $main-border;
-    margin-bottom: 58px;
+  display: flex;
+
+  width: 100%;
+  margin-bottom: 58px;
+
+  border: $main-border;
+
+  flex-wrap: wrap;
 }
 
 .catalog-promo__wrapper{
-    box-sizing: border-box;
-    padding: $main-padding;
+  box-sizing: border-box;
+  padding: $main-padding;
 
-    @include container;
+  @include container;
 }
 
-.catalog-promo__title {
+.catalog-promo__title{
   margin: 23px 0;
   padding-left: 90px;
+
   font-size: 17px;
   line-height: 24px;
 }
@@ -25,6 +29,7 @@
 }
 
 .catalog-promo__text{
-  font-size: 14px;
   margin-bottom: 28px;
+
+  font-size: 14px;
 }

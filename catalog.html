@@ -8,20 +8,23 @@
 <body>
   <header class="page-header">
     <div class="page-header__wrapper">
-      <a class="page-header__logo" href="index.html">
+      <a class="page-header__logo" href="#">
         <img src="img/logo-mobile.svg" alt="MISHKA">
       </a>
       <button class="page-header__toogle" type="button">Открыть меню</button>
       <nav class="main-nav  main-nav--closed">
         <ul class="main-nav__items">
-          <li class="main-nav__item  main-nav__item--active"><a href="#">Каталог товаров</a></li>
+          <li class="main-nav__item  main-nav__item--active"><a href="catalog.html">Каталог товаров</a></li>
           <li class="main-nav__item"><a href="form.html">Вязание на заказ</a></li>
+          <li class="main-nav__item  main-nav__item--hide"><span>Бесплатная доставка по России</span></li>
         </ul>
       </nav>
-      <ul class="page-header__user-block  page-header__user-block--closed">
-        <li class="page-header__user-item"><a href="#">Поиск по сайту</a></li>
-        <li class="page-header__user-item"><a href="#">Корзина: пока пуста</a></li>
-      </ul>
+      <div class="user-block  user-block--closed">
+        <ul class="user-block__items">
+          <li class="user-block__item  user-block__item--search"><a href="#">Поиск по сайту</a></li>
+          <li class="user-block__item  user-block__item--busket"><a href="#">Корзина: пока пуста</a></li>
+        </ul>
+      </div>
     </div>
   </header>
   <main>

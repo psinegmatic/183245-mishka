@@ -1,37 +1,37 @@
 .page-footer{
-    width: auto;
+  width: auto;
 
-    background-color: #F1F1F1;
+  background-color: #F1F1F1;
 }
 
 .page-footer__wrapper{
-    box-sizing: border-box;
-    padding: $main-padding;
+  box-sizing: border-box;
+  padding: $main-padding;
 
-    @include container;
+  @include container;
 }
 
 .page-footer__social{
-    padding: 25px 60px;
+  padding: 25px 60px;
 
-    border-bottom: 1px solid #E5E5E5;
+  border-bottom: 1px solid #E5E5E5;
 }
 
 .social-links{
-    display: flex;
+  display: flex;
 
-    justify-content: space-around;
+  justify-content: space-around;
 }
 
 .footer__developer{
-    display: flex;
+  display: flex;
 
-    padding: 22px 20px;
+  padding: 22px 20px;
 
-    justify-content: space-around;
-    span{
-        font-size: 19px;
-        font-weight: bold;
-        line-height: 30px;
-    }
+  justify-content: space-around;
+  span{
+    font-size: 19px;
+    font-weight: bold;
+    line-height: 30px;
+  }
 }

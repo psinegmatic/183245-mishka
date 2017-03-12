@@ -16,7 +16,7 @@
         <ul class="main-nav__items">
           <li class="main-nav__item  main-nav__item--active"><a href="catalog.html">Каталог товаров</a></li>
           <li class="main-nav__item"><a href="form.html">Вязание на заказ</a></li>
-          <li class="main-nav__item"><span>Бесплатная доставка по России</span></li>
+          <li class="main-nav__item  main-nav__item--hide"><span>Бесплатная доставка по России</span></li>
         </ul>
       </nav>
       <div class="user-block  user-block--closed">
@@ -47,21 +47,23 @@
       <div class="products__wrapper">
         <article class="products__item  products__item--week">
           <h2 class="products__title">Вязаные корзикни<b>товар недели</b></h2>
-          <p class="products__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах</p>
-          <table class="products__features">
-            <tr>
-              <td class="products__value">Цвет:</td>
-              <td class="products_field">«Тиффани»/серый</td>
-            </tr>
-            <tr>
-              <td class="products__value">Диаметр:</td>
-              <td class="products_field">25 см</td>
-            </tr>
-            <tr>
-              <td class="products__value">Высота</td>
-              <td class="products_field">15 см</td>
-            </tr>
-          </table>
+          <div class="products__description-wrapper">
+            <p class="products__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах</p>
+            <table class="products__features">
+              <tr>
+                <td class="products__value">Цвет:</td>
+                <td class="products_field">«Тиффани»/серый</td>
+              </tr>
+              <tr>
+                <td class="products__value">Диаметр:</td>
+                <td class="products_field">25 см</td>
+              </tr>
+              <tr>
+                <td class="products__value">Высота</td>
+                <td class="products_field">15 см</td>
+              </tr>
+            </table>
+          </div>
           <div class="products__picture"><img src="img/triple-set-mobile@1x.jpg" alt="Вязаные корзинки" width="260" height="315"></div>
           <div class="products__item-buy">
             <div class="products__price">Цена: 990 руб.</div>
@@ -100,30 +102,34 @@
       <h2 class="reviews__title">Отзывы</h2>
       <blockquote class="reviews__item">
         <p>Я молодая мама, но все равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров <br> и игрушек в Мишке и мои фотографии сразу стали более стильнее, а также набирают <br> больше лайков!</p>
+      </blockquote>
+      <div class="reviews__author">
         <cite class="reviews__author-name">Анастасия Красильникова</cite>
         <span class="reviews__author-login">@misssssiskras</span>
-      </blockquote>
+      </div>
       <div class="reviews__slider-contorls">
         <button class="reviews__btn reviews__btn-prev" type="button"></button>
         <button class="reviews__btn reviews__btn-next" type="button"></button>
       </div>
-      <a href="#" class="btn">Написать</a>
+      <a href="#" class="reviews__btn-write  btn">Написать</a>
     </div>
   </section>
   <div class="contacts">
     <div class="contacts__wrapper">
-      <div class="contacts-title">
+      <div class="contacts__title">
         <h2>Контакты</h2>
       </div>
       <p>
         <span class="contacts__item-field">e-mail:</span>
         <a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
         <span class="contacts__item-field">адрес:</span>
-        <span class="contacts__adress">г. Санкт-Петербург, <br> ул. Большая Конюшенная, <br> д. 19/8, офис 101</span>
+        <span class="contacts__adress">г. Санкт-Петербург,<br> ул. Большая Конюшенная,<br> д. 19/8, офис 101</span>
       </p>
-      <div class="contacts__map">
-        <iframe src="https://api-maps.yandex.ru/frame/v1/-/CZxhZVyw" width="100%" height="456"></iframe>
-      </div>
+    </div>
+    <div class="contacts__map">
+      <iframe src="https://api-maps.yandex.ru/frame/v1/-/CZxhZVyw" width="100%" height="456"></iframe>
+    </div>
+    <div class="contacts__wrapper">
       <a href="#" class="contacts__btn btn">Напишите нам</a>
     </div>
   </div>

@@ -3,10 +3,13 @@
 
 .main-nav__item{
   display: flex;
-  border-top: 1px solid #ECECEC;
 
+  border-top: 1px solid #ECECEC;
   a{
     padding: 27px 0 27px 60px;
+  }
+  &--hide{
+    display: none;
   }
 }
 
@@ -24,25 +27,35 @@
   }
 }
 
-@media (min-width: 750px) {
-  .main-nav {
+@media (min-width: 750px){
+  .main-nav{
     position: absolute;
     top: 84px;
     left: 20px;
-    order: 10;
+
     width: 100%;
+
+    order: 10;
   }
-  .main-nav__items {
+  .main-nav__items{
     display: flex;
+
     justify-content: flex-start;
   }
-  .main-nav__item {
-    a {
-      padding-left: 55px;
+  .main-nav__item{
+    a{
+      padding: 20px 32px 20px 0;
+
+      font-size: 15px;
     }
-    span {
-      padding: 27px 0 27px 120px;
+    span{
+      padding: 20px 0 20px 45px;
+
+      font-size: 15px;
       font-weight: normal;
+    }
+    &--hide{
+      display: flex;
     }
   }
 }

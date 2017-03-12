@@ -3,103 +3,105 @@
 
 
 .page-header{
-    position: relative;
+  position: relative;
 
-    width: auto;
+  width: auto;
 
-    font-size: 17px;
-    font-weight: bold;
-    line-height: 24px;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 24px;
 
-    border-bottom: 1px solid #ECECEC;
-    background-color: $bg-white;
+  border-bottom: 1px solid #ECECEC;
+  background-color: $bg-white;
 }
 
 .page-header__wrapper{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    position: relative;
+  position: relative;
 
-    @include container;
+  display: flex;
+
+  flex-wrap: wrap;
+  justify-content: space-between;
+  @include container;
 }
 
 .page-header__logo{
-    width: 100%;
-    margin-top: 25px;
-    margin-bottom: 15px;
+  width: 100%;
+  margin-top: 25px;
+  margin-bottom: 15px;
 
-    text-align: center;
+  text-align: center;
 }
 
 .page-header__toogle{
-    position: absolute;
-    z-index: 100;
-    top: 30px;
-    right: 20px;
+  position: absolute;
+  z-index: 100;
+  top: 30px;
+  right: 20px;
 
-    display: block;
+  display: block;
 
-    width: 22px;
-    height: 22px;
+  width: 22px;
+  height: 22px;
 
-    font-size: 0;
+  font-size: 0;
 
-    cursor: pointer;
+  cursor: pointer;
 
-    border: none;
-    outline: none;
-    background-color: #FFFFFF;
-    background-image: url(../img/icon-menu-close.svg);
-    background-repeat: no-repeat;
-    background-position: center;
+  border: none;
+  outline: none;
+  background-color: #FFFFFF;
+  background-image: url(../img/icon-menu-close.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .user-block__item{
   border-top: 1px solid #ECECEC;
-
   a{
     display: block;
+
     padding: 27px 0 27px 60px;
   }
 }
 
-.user-block {
+.user-block{
   width: 100%;
-  &--closed {
+  &--closed{
     // display: none;
   }
 }
 
-@media (min-width: 750px) {
-  .page-header__wrapper {
-    @include container-tablet;
-    padding: 0 50px;
+@media (min-width: 750px){
+  .page-header__wrapper{
     position: relative;
+
+    @include container-tablet;
   }
   .page-header__logo{
     width: 20%;
   }
-  .user-block {
+  .page-header__toogle{
+    display: none;
+  }
+  .user-block{
     width: 50%;
   }
-  .user-block__items {
+  .user-block__items{
     display: flex;
+
     justify-content: flex-end;
-    a {
+    a{
       padding: 30px;
     }
-  .user-block__item {
-    border: 0;
-    border-left: 1px solid #ECECEC;
+    .user-block__item{
+      border: 0;
+      border-left: 1px solid #ECECEC;
+    }
   }
-
-  }
-  .user-block__item--search {
-  a {
-    font-size: 0;
+  .user-block__item--search{
+    a{
+      font-size: 0;
+    }
   }
 }
-}
-
-
