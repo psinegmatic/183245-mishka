@@ -1,0 +1,80 @@
+@import '../utils/mixins.scss';
+@import '../utils/variables.scss';
+
+.preview{
+  display: flex;
+
+  width: 100%;
+  margin: 0 auto;
+
+  background-color: #F9F9F9;
+  background-image: url('../../img/hero-mobile@1x.jpg');
+  background-repeat: no-repeat;
+  background-position: center top;
+
+  flex-wrap: wrap;
+  .preview__title{
+    width: 100%;
+    padding: 90px 40px 120px 40px;
+
+    font-weight: bold;
+  }
+}
+
+.preview__list-wrapper{
+  width: 100%;
+  margin: 0 auto;
+}
+
+.preview__list li{
+  @include container;
+  a{
+    display: block;
+
+    padding: 20px 30px;
+
+    font-size: 19px;
+    font-weight: bold;
+    line-height: 24px;
+
+    text-decoration: none;
+
+    color: $bg-white;
+  }
+}
+
+.preview__item--interior{
+  background-color: $main-cyan;
+}
+
+.preview__item--toy{
+  background-color: $main-darkcyan;
+}
+
+
+@media (min-width: 750px){
+  .preview{
+    width: 100%;
+
+    background-image: url('../../img/hero-tablet@1x.jpg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    .preview__title{
+      margin-bottom: 290px;
+      padding-top: 156px;
+      h2{
+        font-size: 43px;
+      }
+    }
+  }
+  .preview__list{
+    display: flex;
+    li{
+      width: 50%;
+    }
+  }
+
+  .preview__list-wrapper{
+    @include container-tablet;
+  }
+}

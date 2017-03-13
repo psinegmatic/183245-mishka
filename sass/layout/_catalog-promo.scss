@@ -1,0 +1,35 @@
+.catalog-promo{
+  display: flex;
+
+  width: 100%;
+  margin-bottom: 58px;
+
+  border: $main-border;
+
+  flex-wrap: wrap;
+}
+
+.catalog-promo__wrapper{
+  box-sizing: border-box;
+  padding: $main-padding;
+
+  @include container;
+}
+
+.catalog-promo__title{
+  margin: 23px 0;
+  padding-left: 90px;
+
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.catalog-promo__info{
+  padding: 30px;
+}
+
+.catalog-promo__text{
+  margin-bottom: 28px;
+
+  font-size: 14px;
+}

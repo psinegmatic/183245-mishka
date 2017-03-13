@@ -1,0 +1,60 @@
+@import 'utils/mixins.scss';
+@import 'utils/variables.scss';
+
+
+body{
+  margin: 0;
+
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+
+  background-color: $bg-white;
+}
+
+h1,
+h2{
+  margin: 0;
+
+  font-size: 25px;
+  font-weight: bold;
+
+  text-align: left;
+}
+
+h1{
+  font-size: 27px;
+
+  text-align: center;
+}
+a{
+  text-decoration: none;
+
+  color: black;
+}
+
+ul,
+li,
+h1,
+h2,
+p{
+  @include list-null;
+}
+
+p{
+  font-size: 15px;
+  line-height: 24px;
+}
+
+blockquote{
+  margin: 0;
+}
+
+
+fieldset{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  border: none;
+}
