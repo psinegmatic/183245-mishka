@@ -1,37 +1,78 @@
-.page-footer{
+.page-footer {
   width: auto;
 
   background-color: #F1F1F1;
 }
 
-.page-footer__wrapper{
+.page-footer__wrapper {
   box-sizing: border-box;
   padding: $main-padding;
 
   @include container;
 }
 
-.page-footer__social{
+.page-footer__logo {
+  &--hide {
+    display: none;
+  }
+}
+
+.page-footer__social {
   padding: 25px 60px;
 
   border-bottom: 1px solid #E5E5E5;
 }
 
-.social-links{
-  display: flex;
-
-  justify-content: space-around;
-}
-
-.footer__developer{
+.footer__developer {
   display: flex;
 
   padding: 22px 20px;
 
   justify-content: space-around;
-  span{
+  span {
     font-size: 19px;
     font-weight: bold;
     line-height: 30px;
+  }
+}
+
+@media (min-width: 750px) {
+  .page-footer__wrapper {
+    padding: 46px 0;
+    @include container-tablet;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .page-footer__logo--hide {
+    display: flex;
+  }
+  .page-footer__logo {
+    width: 33%;
+    box-sizing: border-box;
+  }
+  .page-footer__social {
+    width: 34%;
+    box-sizing: border-box;
+    border: none;
+  }
+  .footer__developer {
+    width: 33%;
+    box-sizing: border-box;
+    justify-content: flex-end;
+    span {
+      padding-right: 30px;
+    }
+  }
+  .page-footer__logo,
+  .page-footer__social,
+  .footer__developer {
+    padding: 0;
+  }
+}
+
+@media (min-width: 1150px) {
+  .page-footer__wrapper {
+    @include container-desktop;
   }
 }

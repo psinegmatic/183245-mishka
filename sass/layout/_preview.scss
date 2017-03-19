@@ -1,7 +1,7 @@
 @import '../utils/mixins.scss';
 @import '../utils/variables.scss';
 
-.preview{
+.preview {
   display: flex;
 
   width: 100%;
@@ -13,7 +13,7 @@
   background-position: center top;
 
   flex-wrap: wrap;
-  .preview__title{
+  .preview__title {
     width: 100%;
     padding: 90px 40px 120px 40px;
 
@@ -21,21 +21,21 @@
   }
 }
 
-.preview__list-wrapper{
+.preview__list-wrapper {
   width: 100%;
   margin: 0 auto;
 }
 
-.preview__list li{
+.preview__list li {
   @include container;
-  a{
+  a {
     display: block;
 
     padding: 20px 30px;
 
-    font-size: 19px;
+    font-size: 20px;
     font-weight: bold;
-    line-height: 24px;
+    line-height: 30px;
 
     text-decoration: none;
 
@@ -43,38 +43,48 @@
   }
 }
 
-.preview__item--interior{
+.preview__item--interior {
   background-color: $main-cyan;
 }
 
-.preview__item--toy{
+.preview__item--toy {
   background-color: $main-darkcyan;
 }
 
 
-@media (min-width: 750px){
-  .preview{
+@media (min-width: 750px) {
+  .preview {
     width: 100%;
 
-    background-image: url('../../img/hero-tablet@1x.jpg');
-    background-repeat: no-repeat;
-    background-position: center top;
-    .preview__title{
+    background-size: cover;
+    .preview__title {
       margin-bottom: 290px;
       padding-top: 156px;
-      h2{
+      h2 {
         font-size: 43px;
       }
     }
   }
-  .preview__list{
+  .preview__list {
     display: flex;
-    li{
+    li {
       width: 50%;
     }
   }
 
-  .preview__list-wrapper{
+  .preview__list-wrapper {
     @include container-tablet;
+  }
+}
+
+@media (min-width: 1150px) {
+  .preview__title {
+    h1 {
+      font-size: 53px;
+      line-height: 57px;
+    }
+  }
+  .preview__list-wrapper {
+    @include container-desktop;
   }
 }

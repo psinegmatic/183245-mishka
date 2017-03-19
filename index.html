@@ -14,11 +14,13 @@
       <button class="page-header__toogle" type="button">Открыть меню</button>
       <nav class="main-nav  main-nav--closed">
         <ul class="main-nav__items">
-          <li class="main-nav__item  main-nav__item--active"><a href="catalog.html">Каталог товаров</a></li>
+          <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
           <li class="main-nav__item"><a href="form.html">Вязание на заказ</a></li>
-          <li class="main-nav__item  main-nav__item--hide"><span>Бесплатная доставка по России</span></li>
+          <li class="main-nav__item  main-nav__item--hide"><a href="#">Новые поступления</a></li>
+          <li class="main-nav__item  main-nav__item--hide"><a href="#">Распродажа</a></li>
         </ul>
       </nav>
+      <div class="page-header__delivery  page-header__delivery--hide"><span>Бесплатная доставка по России</span></div>
       <div class="user-block  user-block--closed">
         <ul class="user-block__items">
           <li class="user-block__item  user-block__item--search"><a href="#">Поиск по сайту</a></li>
@@ -76,22 +78,22 @@
       <div class="advantages__wrapper">
         <h2 class="advantages__title">Коротко о нас:</h2>
         <ul class="advantages__items">
-          <li class="advantages__item"><svg class="advantages-icon  advantages-icon--1" width="40" height="40">
+          <li class="advantages__item  advantages__item--eco"><svg class="advantages-icon  advantages-icon--1" width="40" height="40">
             <use xlink:href="img/icon-feature-1.svg"></use>
           </svg><b>Экологически <br> чистые материалы</b></li>
-          <li class="advantages__item"><svg class="advantages-icon  advantages-icon--2" width="40" height="40">
+          <li class="advantages__item  advantages__item--style"><svg class="advantages-icon  advantages-icon--2" width="40" height="40">
             <use xlink:href="img/icon-feature-2.svg"></use>
           </svg><b>Скандинавский стиль по российской цене</b></li>
-          <li class="advantages__item"><svg class="advantages-icon  advantages-icon--3" width="40" height="40">
+          <li class="advantages__item  advantages__item--likes"><svg class="advantages-icon  advantages-icon--3" width="40" height="40">
             <use xlink:href="img/icon-feature-3.svg"></use>
           </svg><b>Увеличивает  лайки <br> на фотографиях</b></li>
-          <li class="advantages__item"><svg class="advantages-icon  advantages-icon--4" width="40" height="40">
+          <li class="advantages__item  advantages__item--knit"><svg class="advantages-icon  advantages-icon--4" width="40" height="40">
             <use xlink:href="img/icon-feature-4.svg"></use>
           </svg><b>Связано вручную с <br> любовью и умилением</b></li>
-          <li class="advantages__item"><svg class="advantages-icon  advantages-icon--5" width="40" height="40">
+          <li class="advantages__item  advantages__item--native"><svg class="advantages-icon  advantages-icon--5" width="40" height="40">
             <use xlink:href="img/icon-feature-5.svg"></use>
           </svg><b>Поддержка отечественного производителя</b></li>
-          <li class="advantages__item"><svg class="advantages-icon  advantages-icon--6" width="40" height="40">
+          <li class="advantages__item  advantages__item--gift"><svg class="advantages-icon  advantages-icon--6" width="40" height="40">
             <use xlink:href="img/icon-feature-6.svg"></use>
           </svg><b>Поставляется в <br> подарочной упаковке</b></li>
         </ul>
@@ -101,7 +103,7 @@
       <div class="reviews__wrapper">
         <h2 class="reviews__title">Отзывы</h2>
         <blockquote class="reviews__item">
-          <p>Я молодая мама, но все равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров <br> и игрушек в Мишке и мои фотографии сразу стали более стильнее, а также набирают <br> больше лайков!</p>
+          <p>Я молодая мама, но все равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке и мои фотографии сразу стали более стильнее, а также набирают больше лайков!</p>
         </blockquote>
         <div class="reviews__author">
           <cite class="reviews__author-name">Анастасия Красильникова</cite>
@@ -118,35 +120,34 @@
       <div class="contacts__wrapper">
         <div class="contacts__title">
           <h2>Контакты</h2>
+          <img class="contacts__flag" src="img/icon-flag.svg" alt="Флаг" width="46" height="81">
         </div>
         <p>
           <span class="contacts__item-field">e-mail:</span>
-          <a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+          <a class="contacts__item-mail"  href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
           <span class="contacts__item-field">адрес:</span>
-          <span class="contacts__adress">г. Санкт-Петербург,<br> ул. Большая Конюшенная,<br> д. 19/8, офис 101</span>
+          <span class="contacts__item-adress">г. Санкт-Петербург,<br> ул. Большая Конюшенная,<br> д. 19/8, офис 101</span>
         </p>
       </div>
       <div class="contacts__map">
         <iframe src="https://api-maps.yandex.ru/frame/v1/-/CZxhZVyw" width="100%" height="456"></iframe>
       </div>
-      <div class="contacts__wrapper">
+      <div class="contacts__wrapper  contacts__wrapper--btn">
         <a href="#" class="contacts__btn btn">Напишите нам</a>
       </div>
     </div>
   </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper">
+      <div class="page-footer__logo  page-footer__logo--hide"><a href="#" class="page-footer__logo-link"><img src="../img/logo-mobile.svg" alt="Мишка"></a></div>
       <div class="page-footer__social">
         <ul class="social-links">
-          <li class="social-links  social-links--in"><svg class="social-links__icon" width="30" height="30">
-            <use x="0" y="0" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icon-insta.svg"></use>
-          </svg><a href="#"></a></li>
-          <li class="social-links  social-links--fb"><svg class="social-links__icon" width="30" height="30">
-            <use x="0" y="0" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icon-fb.svg.svg"></use>
-          </svg><a href="#"><a href="#"></a></li>
-          <li class="social-links  social-links--tw"><svg class="social-links__icon" width="30" height="30">
-            <use x="0" y="0" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icon-twitter.svg"></use>
-          </svg><a href="#"><a href="#"></a></li>
+          <li class="social-link  social-links--in"><img class="social-links__icon" src="../img/icon-insta.svg" width="30" height="30">
+          </img></li>
+          <li class="social-link  social-links--fb"><img class="social-links__icon" src="../img/icon-fb.svg" width="30" height="30">
+          </img></li>
+          <li class="social-link  social-links--tw"><img class="social-links__icon" src="../img/icon-twitter.svg" width="30" height="30">
+          </img></li>
         </ul>
       </div>
       <div class="footer__developer"><span class="footer__developer-text">Разработано</span><a href="#" class="developer-logo"><img src="img/logo-htmlacademy.svg" alt="Htmlacademy" width="30" height="35"></a></div>

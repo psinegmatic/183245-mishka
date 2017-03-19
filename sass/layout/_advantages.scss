@@ -46,7 +46,40 @@
     @include container-tablet;
     flex-wrap: wrap;
   }
-  .advantages__item{
+  .advantages__item {
     width: 50%;
+    &--eco{
+      order: 1;
+    }
+    &--style {
+      order: 3;
+    }
+    &--likes {
+      order: 5;
+    }
+    &--knit {
+      order: 2;
+    }
+    &--native {
+      order: 4
+    }
+    &--gift {
+      order: 6;
+    }
+    b {
+      font-size: 20px;
+      line-height: 22px;
+    }
+  }
+}
+
+@media (min-width: 1150px) {
+  .advantages__wrapper {
+    @include container-desktop;
+    padding: 0 175px;
+  }
+  .advantages__title {
+    font-size: 53px;
+    line-height: 57px;
   }
 }
