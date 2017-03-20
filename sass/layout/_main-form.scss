@@ -24,12 +24,14 @@
 }
 
 .main-form__fieldset-wrapper {
-  width: 260px;
-  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+      flex-direction: column;
+
+  width: 260px;
+  margin: 0 auto;
+
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -119,6 +121,16 @@
     border-radius: 50%;
     background-color: $main-cyan;
   }
+  &:hover {
+    &::before {
+      border: 2px solid #46C1AE;
+    }
+  }
+  &:active {
+    &::before {
+      border: 2px solid #C7C7C7;
+    }
+  }
 }
 
 .main-form__filter-radio {
@@ -164,12 +176,20 @@ input[type='checkbox']:checked + label::after {
     border: none;
     border-bottom: 2px solid #111111;
     outline: none;
+    &:hover,
+    &:focus {
+      border-bottom: 2px solid #46C1AE;
+    }
   }
   textarea {
     box-sizing: border-box;
     padding: 10px 20px;
 
     border: 2px solid #111111;
+    &:hover,
+    &:focus {
+      border: 2px solid #46C1AE;
+    }
   }
 }
 
@@ -372,7 +392,7 @@ input[type='checkbox']:checked + label::after {
     }
   }
   .main-form__submit-area {
-    padding-left: 10%;
     padding-right: 175px;
+    padding-left: 10%;
   }
 }

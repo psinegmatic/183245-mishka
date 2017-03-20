@@ -42,7 +42,13 @@
     color: $bg-white;
   }
 }
-
+.preview__item {
+  a {
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}
 .preview__item--interior {
   background-color: $main-cyan;
 }

@@ -9,6 +9,12 @@
   border-top: 1px solid #ECECEC;
   a {
     padding: 27px 0 27px 60px;
+    &:hover {
+      opacity: 0.6;
+    }
+    &:active {
+      opacity: 0.3;
+    }
   }
   &--hide {
     display: none;

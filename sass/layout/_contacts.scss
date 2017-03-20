@@ -60,6 +60,9 @@
       line-height: 30px;
       justify-content: flex-start;
     }
+    &--btn {
+      padding: 0 219px;
+    }
   }
   .contacts__title {
     position: relative;
@@ -79,6 +82,15 @@
     width: 31%;
     margin-bottom: 100px;
     margin-right: 70px;
+    &:hover {
+      color: #46c1ae;
+    }
+    &:active {
+      opacity: 0.3;
+    }
+  }
+  .contacts__btn {
+    width: 100%;
   }
 }
 

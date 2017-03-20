@@ -46,12 +46,28 @@
 .main-catalog__item-text {
   width: 100%;
   padding: 27px 27px;
+  &:hover {
+    transition: all 0.3s;
+
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+  &:active {
+    transition: all 0.2s;
+
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+  }
 }
 
 .main-catalog__item-title {
   display: block;
 
   padding-bottom: 20px;
+  &:hover {
+    opacity: 0.6;
+  }
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .main-catalog__item-title h2 {
@@ -80,8 +96,9 @@
     line-height: 50px;
   }
   .main-catalog__wrapper {
-    @include container-tablet;
     padding: 0;
+
+    @include container-tablet;
   }
   .main-catalog__items {
     display: flex;
