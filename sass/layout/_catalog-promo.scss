@@ -1,0 +1,126 @@
+.catalog-promo {
+  position: relative;
+  display: flex;
+
+  width: 100%;
+  margin-bottom: 58px;
+
+  border: $main-border;
+
+  flex-wrap: wrap;
+}
+
+.catalog-promo__wrapper {
+  box-sizing: border-box;
+  padding: $main-padding;
+
+  @include container;
+}
+
+.catalog-promo__title {
+  position: absolute;
+  top: 25px;
+  left: 90px;
+/*   margin: 23px 0;
+padding-left: 90px; */
+
+  font-size: 17px;
+  line-height: 24px;
+}
+.catalog-promo__video {
+  position: relative;
+  padding-top: 95px;
+  img {
+    vertical-align: middle;
+  }
+}
+.catalog-promo__play {
+  position: absolute;
+  top: 140px;
+  left: 77px;
+}
+.catalog-promo__info {
+  padding: 32px 34px;
+}
+.catalog-promo__pic {
+  position: absolute;
+  top: 30px;
+}
+.catalog-promo__text {
+  margin-bottom: 28px;
+
+  font-size: 13px;
+
+  p {
+    padding-right: 14px;
+  }
+}
+
+@media (min-width: 750px) {
+  .catalog-promo__title {
+    position: inherit;
+    width: 100%;
+    margin-bottom: 34px;
+    padding-left: 65px;
+
+    font-size: 20px;
+
+    order: 20;
+  }
+  .catalog-promo__video {
+    padding-top: 0;
+    width: 100%;
+
+    order: 10;
+  }
+  .catalog-promo__video-image {
+    width: 100%;
+    height: auto;
+  }
+  .catalog-promo__play {
+    top: 150px;
+    left: 250px;
+  }
+  .catalog-promo__info {
+    padding: 36px 42px 46px 42px;
+    order: 30;
+  }
+  .catalog-promo__pic {
+    top: 415px;
+  }
+  .catalog-promo__text {
+    font-size: 15px;
+    line-height: 30px;
+    margin-bottom: 40px;
+  }
+  .catalog-promo__buy-btn {
+    order: 40;
+  }
+}
+
+@media (min-width: 1150px) {
+  .catalog-promo {
+    justify-content: flex-end;
+  }
+  .catalog-promo__video {
+    width: 73%;
+    box-sizing: border-box;
+    padding-right: 80px;
+  }
+  .catalog-promo__video-image {
+    min-height: 454px;
+  }
+  .catalog-promo__title {
+    padding-left: 0;
+    box-sizing: border-box;
+    width: 27%;
+  }
+  .catalog-promo__info {
+    padding: 98px 54px 60px 0;
+    box-sizing: border-box;
+    width: 27%;
+  }
+  .catalog-promo__pic {
+    top: 42px;
+  }
+}

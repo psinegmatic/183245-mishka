@@ -1,0 +1,15 @@
+.social-links {
+  display: flex;
+
+  justify-content: space-around;
+
+  li {
+    padding: 0 17px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .social-links {
+    justify-content: center;
+  }
+}

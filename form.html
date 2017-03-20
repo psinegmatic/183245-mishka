@@ -1,41 +1,46 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Мишка</title>
-  </head>
-  <body>
-    <header class="page-header">
-      <div class="page-header__wrapper">
-        <a class="page-header__logo" href="#">
-          <img src="http://placehold.it/150x100" alt="MISHKA">
-        </a>
-        <nav class="main-nav  main-nav--closed">
-          <button class="main-nav__toogle" type="button">Открыть меню</button>
-          <div class="main-nav__wrapper">
-            <ul class="main-nav__items">
-              <li class="main-nav__item  main-nav__item--active"><a href="#">Каталог товаров</a></li>
-              <li class="main-nav__item">Вязание на заказ<a href="#"></a></li>
-            </ul>
-            <ul>
-              <li class="main-nav__item">Поиск по сайту<a href="#"></a></li>
-              <li class="main-nav__item">Корзина: пока пуста<a href="#"></a></li>
-            </ul>
-          </div>
-        </nav>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Мишка</title>
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+  <header class="page-header">
+    <div class="page-header__wrapper">
+      <a class="page-header__logo" href="#">
+        <img src="img/logo-mobile.svg" alt="MISHKA">
+      </a>
+      <button class="page-header__toogle" type="button">Открыть меню</button>
+      <nav class="main-nav  main-nav--closed">
+        <ul class="main-nav__items">
+          <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
+          <li class="main-nav__item"><a href="form.html">Вязание на заказ</a></li>
+          <li class="main-nav__item  main-nav__item--hide"><a href="#">Новые поступления</a></li>
+          <li class="main-nav__item  main-nav__item--hide"><a href="#">Распродажа</a></li>
+        </ul>
+      </nav>
+      <div class="page-header__delivery  page-header__delivery--hide"><span>Бесплатная доставка по России</span></div>
+      <div class="user-block  user-block--closed">
+        <ul class="user-block__items">
+          <li class="user-block__item  user-block__item--search"><a href="#">Поиск по сайту</a></li>
+          <li class="user-block__item  user-block__item--busket"><a href="#">Корзина: пока пуста</a></li>
+        </ul>
       </div>
-    </header>
-    <main class="main">
-      <div class="main__form-title">
-        <h1>Вязание на заказ</h1>
+    </div>
+  </header>
+  <main class="main">
+    <div class="main-form__title">
+      <h1>Вязание на заказ</h1>
+    </div>
+    <form class="main-form" action="#" method="post">
+      <div class="main-form__description">
+        <span class="main-form__slogan">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа, и мы свяжемся с вами, чтобы уточнить детали.</span>
       </div>
-      <form class="main-form" action="#" method="post">
-        <div class="main-form__description">
-          <span class="main-form__slogan">Мы будем рады воплотить в жизнь ваши пожелания!</span><span>Заполните простую форму заказа, и мы свяжемся с вами, чтобы уточнить детали.</span>
-        </div>
-        <fieldset class="main-form__fieldset main-form__fieldset--type">
+      <fieldset class="main-form__fieldset main-form__fieldset--type">
+        <div class="main-form__fieldset-wrapper">
           <h2 class="main-form__fieldset-title">Тип</h2>
-          <ul class="main-form__filter">
+          <ul class="main-form__filter  main-form__filter--type">
             <li class="main-form__filter-item main-form__filter-item--type">
               <input type="radio" name="radiogroup" value="access" id="accessory">
               <label class="main-form__filter-radio" for="accessory">Аксессуар для интерьера</label>
@@ -45,10 +50,12 @@
               <label class="main-form__filter-radio" for="toy">Детская игрушка</label>
             </li>
           </ul>
-        </fieldset>
-        <fieldset class="main-form__fieldset main-form__fieldset--color">
+        </div>
+      </fieldset>
+      <fieldset class="main-form__fieldset main-form__fieldset--color">
+        <div class="main-form__fieldset-wrapper  main-form__fieldset-wrapper--nowrap">
           <h2 class="main-form__fieldset-title">Цвет</h2>
-          <ul class="main-form__filter">
+          <ul class="main-form__filter  main-form__filter--color">
             <li class="main-form__filter-item main-form__filter-item--color">
               <input type="checkbox" name="white" value="wh" id="checkbox-color1">
               <label class="main-form__filter-checkbox" for="checkbox-color1">Белый</label>
@@ -59,7 +66,7 @@
             </li>
             <li class="main-form__filter-item main-form__filter-item--color">
               <input type="checkbox" name="tiffany" value="tif" id="checkbox-color3">
-              <label class="main-form__filter-checkbox" for="checkbox-color3">Тиффани</label>
+              <label class="main-form__filter-checkbox" for="checkbox-color3">"Тиффани"</label>
             </li>
             <li class="main-form__filter-item main-form__filter-item--color">
               <input type="checkbox" name="black" value="bl" id="checkbox-color4">
@@ -74,64 +81,77 @@
               <label class="main-form__filter-checkbox" for="checkbox-color6">Оранжевый</label>
             </li>
           </ul>
-        </fieldset>
-        <fieldset class="main-form__fieldset main-form__fieldset--client-contacts">
+        </div>
+      </fieldset>
+      <fieldset class="main-form__fieldset main-form__fieldset--client-contacts">
+        <div class="main-form__fieldset-wrapper">
           <h2 class="main-form__fieldset-title">ФИО</h2>
-          <ul class="main-form__filter">
-            <li class="main-form__filter-item main-form__filter-item--type">
-              <label for="family-name" class="main-form__family-name">Фамилия:</label>
-              <input class="main-form__family-name-input" id="family-name" type="text" name="family-name" placeholder="Укажите фамилию">
-            </li>
-            <li class="main-form__filter-item main-form__filter-item--type">
+          <ul class="main-form__filter main-form__filter--text">
+            <li class="main-form__filter-item main-form__filter-item--name">
               <label for="first-name" class="main-form__first-name">Имя:</label>
               <input class="main-form__first-name-input" id="first-name" type="text" name="first-name" placeholder="Введите ваше имя">
             </li>
-            <li class="main-form__filter-item main-form__filter-item--type">
+            <li class="main-form__filter-item main-form__filter-item--name">
+              <label for="family-name" class="main-form__family-name">Фамилия:</label>
+              <input class="main-form__family-name-input" id="family-name" type="text" name="family-name" placeholder="Укажите фамилию">
+            </li>
+            <li class="main-form__filter-item main-form__filter-item--name">
               <label for="last-name" class="main-form__last-name">Отчество:</label>
               <input class="main-form__last-name-input" id="last-name" type="text" name="last-name" placeholder="Отчество, если желаете">
             </li>
           </ul>
-        </fieldset>
-        <fieldset class="main-form__fieldset main-form__fieldset--client-phone">
+        </div>
+      </fieldset>
+      <fieldset class="main-form__fieldset main-form__fieldset--phone">
+        <div class="main-form__fieldset-wrapper">
           <h2 class="main-form__fieldset-title">Тел</h2>
-          <ul class="main-form__filter main-form__filter-phone">
-            <li class="main-form__filter-item main-form__filter-item--type">
+          <ul class="main-form__filter main-form__filter--text main-form__filter-phone">
+            <li class="main-form__filter-item main-form__filter-item--phone">
               <input id="phone" type="text" name="phone" placeholder="+7 ХХХ ХХ ХХ">
             </li>
           </ul>
-        </fieldset>
-        <fieldset class="main-form__fieldset main-form__fieldset--client-mail">
+        </div>
+      </fieldset>
+      <fieldset class="main-form__fieldset main-form__fieldset--mail">
+        <div class="main-form__fieldset-wrapper">
           <h2 class="main-form__fieldset-title">E-mail</h2>
-          <ul class="main-form__filter main-form__filter-mail">
-            <li class="main-form__filter-item main-form__filter-item--type">
+          <ul class="main-form__filter main-form__filter--text main-form__filter-mail">
+            <li class="main-form__filter-item main-form__filter-item--mail">
               <input id="mail" type="text" name="mail" placeholder="Ваш e-mail">
-          </ul>
+            </ul>
+          </div>
         </fieldset>
         <fieldset class="main-form__fieldset main-form__fieldset--client-contacts main-form__fieldset--client-message">
-          <h2 class="main-form__fieldset-title">Доп</h2>
-          <ul class="main-form__filter">
-            <li class="main-form__filter-item main-form__filter-item--type">
-              <textarea id="text" name="text" rows="5" cols="50" placeholder="Опишите все ваши пожелания кзаказу"></textarea>
-            </li>
-          </ul>
-          <div class="main-form__submit-area">
-            <span class="main-form__required-field">*Поля обязательны для заполнения</span>
-            <button type="submit" class="main-form__btn btn">Отправить заказ</button>
+          <div class="main-form__fieldset-wrapper  main-form__fieldset-wrapper--wrap">
+            <h2 class="main-form__fieldset-title">Доп</h2>
+            <ul class="main-form__filter main-form__filter--text">
+              <li class="main-form__filter-item main-form__filter-item--type">
+                <textarea id="text" name="text" rows="5" cols="50" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+              </li>
+            </ul>
+            <div class="main-form__submit-area">
+              <div class="main-form__required-field">*Поля обязательны для заполнения</div>
+              <button type="submit" class="main-form__btn btn">Отправить заказ</button>
+            </div>
           </div>
         </fieldset>
       </form>
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
+        <div class="page-footer__logo  page-footer__logo--hide"><a href="#" class="page-footer__logo-link"><img src="../img/logo-mobile.svg" alt="Мишка"></a></div>
         <div class="page-footer__social">
           <ul class="social-links">
-            <li class="social-link  social-link--in"><a href="#"></a></li>
-            <li class="social-link  social-link--fb"><a href="#"></a></li>
-            <li class="social-link  social-link--tw"><a href="#"></a></li>
+            <li class="social-link  social-links--in"><img class="social-links__icon" src="../img/icon-insta.svg" width="30" height="30">
+            </img></li>
+            <li class="social-link  social-links--fb"><img class="social-links__icon" src="../img/icon-fb.svg" width="30" height="30">
+            </img></li>
+            <li class="social-link  social-links--tw"><img class="social-links__icon" src="../img/icon-twitter.svg" width="30" height="30">
+            </img></li>
           </ul>
         </div>
-        <div class="footer__developer"><span class="footer__developer-text">Разработано</span><a href="#" class="developer-logo"><img src="http://placehold.it/150x100" alt="Htmlacademy"></a></div>
+        <div class="footer__developer"><span class="footer__developer-text">Разработано</span><a href="#" class="developer-logo"><img src="img/logo-htmlacademy.svg" alt="Htmlacademy" width="30" height="35"></a></div>
       </div>
     </footer>
   </body>
-</html>
+  </html>
