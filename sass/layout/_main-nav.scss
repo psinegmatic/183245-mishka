@@ -9,6 +9,12 @@
   border-top: 1px solid #ECECEC;
   a {
     padding: 27px 0 27px 60px;
+    &:hover {
+      opacity: 0.6;
+    }
+    &:active {
+      opacity: 0.3;
+    }
   }
   &--hide {
     display: none;
@@ -31,9 +37,9 @@
 
 @media (min-width: 750px) {
   .main-nav {
-    -webkit-box-ordinal-group: 11;
-    -ms-flex-order: 10;
-    order: 10;
+    -webkit-box-ordinal-group: 31;
+        -ms-flex-order: 30;
+            order: 30;
   }
   .main-nav__items {
     display: -webkit-box;
