@@ -79,9 +79,9 @@
   .page-header__wrapper {
     position: relative;
 
-    margin-bottom: -65px;
-
     @include container-tablet;
+
+    margin-bottom: -65px;
   }
   .page-header__logo {
     box-sizing: border-box;
@@ -138,9 +138,9 @@
 
 @media (min-width: 1150px) {
   .page-header__wrapper {
-    margin-bottom: -78px;
-
     @include container-desktop;
+
+    margin-bottom: -78px;
   }
   .page-header__logo {
     width: 25%;
