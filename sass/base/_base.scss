@@ -2,7 +2,7 @@
 @import 'utils/variables.scss';
 
 
-body{
+body {
   margin: 0;
 
   font-family: 'Open Sans', Arial, sans-serif;
@@ -13,7 +13,7 @@ body{
 }
 
 h1,
-h2{
+h2 {
   margin: 0;
 
   font-size: 25px;
@@ -22,12 +22,12 @@ h2{
   text-align: left;
 }
 
-h1{
+h1 {
   font-size: 27px;
 
   text-align: center;
 }
-a{
+a {
   text-decoration: none;
 
   color: black;
@@ -37,21 +37,21 @@ ul,
 li,
 h1,
 h2,
-p{
+p {
   @include list-null;
 }
 
-p{
+p {
   font-size: 15px;
   line-height: 24px;
 }
 
-blockquote{
+blockquote {
   margin: 0;
 }
 
 
-fieldset{
+fieldset {
   width: 100%;
   margin: 0;
   padding: 0;
