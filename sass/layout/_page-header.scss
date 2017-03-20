@@ -16,10 +16,18 @@
 .page-header__wrapper {
   position: relative;
 
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
   display: flex;
 
-  flex-wrap: wrap;
-  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   @include container;
 }
 
@@ -71,7 +79,7 @@
 .user-block {
   width: 100%;
   &--closed {
-    // display: none;
+    /* display: none;*/
   }
 }
 
@@ -88,6 +96,9 @@
     width: 47%;
 
     text-align: left;
+    -webkit-box-ordinal-group: 11;
+        -ms-flex-order: 10;
+            order: 10;
   }
   .page-header__toogle {
     display: none;
@@ -108,8 +119,13 @@
   .user-block {
     box-sizing: border-box;
     width: 53%;
+    -webkit-box-ordinal-group: 21;
+        -ms-flex-order: 20;
+            order: 20;
   }
   .user-block__items {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     a {
       padding: 33px 0 33px 32px;
@@ -149,19 +165,33 @@
 
     text-align: center;
 
-    order: 20;
+    -webkit-box-ordinal-group: 21;
+
+        -ms-flex-order: 20;
+
+            order: 20;
   }
   .main-nav {
     width: 40%;
 
-    order: 10;
+    -webkit-box-ordinal-group: 11;
+
+        -ms-flex-order: 10;
+
+            order: 10;
   }
   .user-block {
     width: 34%;
 
-    order: 30;
+    -webkit-box-ordinal-group: 31;
+
+        -ms-flex-order: 30;
+
+            order: 30;
   }
   .user-block__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     a {
       width: 100%;
@@ -169,10 +199,13 @@
     }
   }
   .page-header__delivery {
-    order: 40;
+    -webkit-box-ordinal-group: 41;
+        -ms-flex-order: 40;
+            order: 40;
   }
   .main-nav__items {
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .main-nav__item {
     box-sizing: border-box;
@@ -183,6 +216,8 @@
       font-size: 17px;
     }
     &--hide {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
       a {
         padding-top: 20px;
