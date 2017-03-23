@@ -271,9 +271,12 @@ input[type='checkbox']:checked + label::after {
   .main-form__fieldset-title {
     width: 25%;
 
-    align-self: baseline;
+    -ms-flex-item-align: baseline;
+
+        align-self: baseline;
     &--client-message {
-      align-self: flex-start;
+      -ms-flex-item-align: start;
+          align-self: flex-start;
     }
     &::before {
       display: none;
@@ -303,7 +306,9 @@ input[type='checkbox']:checked + label::after {
   .main-form__filter {
     width: 75%;
 
-    align-self: baseline;
+    -ms-flex-item-align: baseline;
+
+        align-self: baseline;
     &--color {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -385,7 +390,9 @@ input[type='checkbox']:checked + label::after {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
     -ms-flex-direction: row-reverse;
-    align-items: baseline;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
@@ -461,7 +468,9 @@ input[type='checkbox']:checked + label::after {
   }
   .main-form__fieldset-wrapper--wrap {
     h2 {
-      align-self: inherit;
+      -ms-flex-item-align: inherit;
+          -ms-grid-row-align: inherit;
+          align-self: inherit;
     }
   }
   .main-form__submit-area {
