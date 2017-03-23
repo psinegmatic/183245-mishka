@@ -33,7 +33,7 @@
 
 .page-header__logo {
   width: 100%;
-  margin-top: 25px;
+  margin-top: 23px;
   margin-bottom: 15px;
 
   text-align: center;
@@ -93,7 +93,7 @@
   }
   .page-header__logo {
     box-sizing: border-box;
-    width: 47%;
+    width: 48%;
 
     text-align: left;
     -webkit-box-ordinal-group: 11;
@@ -106,8 +106,8 @@
   .page-header__delivery {
     &--hide {
       position: absolute;
-      top: 109px;
-      right: 0;
+      top: 106px;
+      right: 7px;
 
       display: block;
 
@@ -118,7 +118,7 @@
   }
   .user-block {
     box-sizing: border-box;
-    width: 53%;
+    width: 52%;
     -webkit-box-ordinal-group: 21;
         -ms-flex-order: 20;
             order: 20;
@@ -128,18 +128,18 @@
     display: -ms-flexbox;
     display: flex;
     a {
-      padding: 33px 0 33px 32px;
+      padding: 31px 14px 33px 0;
     }
     .user-block__item {
       border: 0;
       border-left: 1px solid #ECECEC;
       &--search {
         box-sizing: border-box;
-        width: 21%;
+        width: 24%;
       }
       &--busket {
         box-sizing: border-box;
-        width: 79%;
+        width: 76%;
 
         text-align: right;
       }
@@ -181,7 +181,7 @@
             order: 10;
   }
   .user-block {
-    width: 34%;
+    width: 33.5%;
 
     -webkit-box-ordinal-group: 31;
 
@@ -195,7 +195,7 @@
     display: flex;
     a {
       width: 100%;
-      padding: 33px 0;
+      padding: 32px 16px 34px 0;
     }
   }
   .page-header__delivery {
@@ -209,9 +209,9 @@
   }
   .main-nav__item {
     box-sizing: border-box;
-    width: 50%;
+    width: 44%;
     a {
-      padding: 33px 32px 33px 0;
+      padding: 32px 0 33px 0;
 
       font-size: 17px;
     }
@@ -230,7 +230,7 @@
     }
     &:nth-child(2n) {
       a {
-        padding-left: 31px;
+        padding-left: 35px;
       }
     }
   }
