@@ -8,10 +8,11 @@
 }
 
 .main-form {
-  margin-bottom: 55px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+
+  margin-bottom: 55px;
 
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -74,8 +75,7 @@
   color: $main-cyan;
   &--color,
   &--phone,
-  &--mail
-   {
+  &--mail {
     margin-bottom: 5px;
   }
   &--client-message {
@@ -97,10 +97,11 @@
 
 .main-form__filter-item {
   margin-bottom: 24px;
+
   line-height: 17px;
   &--color {
-      margin-bottom: 0;
-      padding: 21.5px 0;
+    margin-bottom: 0;
+    padding: 21.5px 0;
   }
   &--client-message {
     margin-bottom: 5px;
@@ -126,7 +127,9 @@
   textarea {
     box-sizing: border-box;
     padding: 10px 20px;
+
     line-height: 24px;
+
     border: 2px solid #111111;
     &:hover,
     &:focus {
@@ -191,7 +194,6 @@
 }
 
 .main-form__filter-radio {
-
   &::before {
     border-radius: 50%;
   }
@@ -241,6 +243,7 @@ input[type='checkbox']:checked + label::after {
   .main-form__title {
     margin-bottom: 73px;
     padding: 93px 0 82px 0;
+
     font-size: 43px;
     line-height: 50px;
   }
@@ -345,9 +348,10 @@ input[type='checkbox']:checked + label::after {
       display: -ms-flexbox;
       display: flex;
 
-      font-weight: 600;
       margin-bottom: 37px;
       padding: 0;
+
+      font-weight: 600;
       label,
       input {
         font-size: 19px;
@@ -420,8 +424,8 @@ input[type='checkbox']:checked + label::after {
 
 @media (min-width: 1150px) {
   .main-form__title {
-    padding: 95px 0 100px 0;
     margin-bottom: 123px;
+    padding: 95px 0 100px 0;
     h1 {
       font-size: 53px;
       line-height: 57px;
@@ -441,7 +445,7 @@ input[type='checkbox']:checked + label::after {
     box-sizing: border-box;
     width: 87%;
     &--text {
-      padding:0 145px 0 19px;
+      padding: 0 145px 0 19px;
     }
   }
   .main-form__filter-item {
