@@ -18,7 +18,7 @@
 }
 
 .page-footer__social {
-  padding: 25px 60px;
+  padding: 27px 62px 19px 56px;
 
   border-bottom: 1px solid #E5E5E5;
 }
@@ -38,7 +38,7 @@
 
 @media (min-width: 750px) {
   .page-footer__wrapper {
-    padding: 46px 0;
+    padding: 56px 0 43px 0;
     @include container-tablet;
     display: flex;
     align-items: center;

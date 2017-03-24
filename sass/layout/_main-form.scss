@@ -12,13 +12,15 @@
   display: -ms-flexbox;
   display: flex;
 
+  margin-bottom: 55px;
+
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
 .main-form__title {
-  margin-bottom: 30px;
-  padding: 73px 0;
+  margin-bottom: 21px;
+  padding: 69px 0 78px 0;
 
   background-color: $bg-grey;
 }
@@ -40,11 +42,11 @@
 .main-form__description {
   width: 260px;
   margin: 0 auto;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
 
 .main-form__slogan {
-  font-size: 14px;
+  font-size: 13px;
   line-height: 24px;
 }
 
@@ -53,17 +55,32 @@
   display: -ms-flexbox;
   display: flex;
 
-  margin-bottom: 30px;
+  margin-bottom: 13px;
+  &--client-contacts,
+  &--phone,
+  &--mail {
+    margin-bottom: 0;
+  }
 }
 
 .main-form__fieldset-title {
   position: relative;
 
-  font-size: 16px;
+  margin-bottom: 26px;
+
+  font-size: 17px;
 
   text-transform: uppercase;
 
   color: $main-cyan;
+  &--color,
+  &--phone,
+  &--mail {
+    margin-bottom: 5px;
+  }
+  &--client-message {
+    margin-bottom: 18px;
+  }
   &::before {
     position: absolute;
     top: 50%;
@@ -75,6 +92,49 @@
     content: '';
 
     background-color: $main-cyan;
+  }
+}
+
+.main-form__filter-item {
+  margin-bottom: 24px;
+
+  line-height: 17px;
+  &--color {
+    margin-bottom: 0;
+    padding: 21.5px 0;
+  }
+  &--client-message {
+    margin-bottom: 5px;
+  }
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px 0;
+
+    font-size: 17px;
+    line-height: 28px;
+
+    resize: none;
+
+    border: none;
+    border-bottom: 2px solid #111111;
+    outline: none;
+    &:hover,
+    &:focus {
+      border-bottom: 2px solid #46C1AE;
+    }
+  }
+  textarea {
+    box-sizing: border-box;
+    padding: 10px 20px;
+
+    line-height: 24px;
+
+    border: 2px solid #111111;
+    &:hover,
+    &:focus {
+      border: 2px solid #46C1AE;
+    }
   }
 }
 
@@ -161,40 +221,8 @@ input[type='checkbox']:checked + label::after {
   display: block;
 }
 
-.main-form__filter-item {
-  padding: 15px 0;
-  input,
-  textarea {
-    width: 100%;
-    padding: 10px 0;
-
-    font-size: 17px;
-    line-height: 28px;
-
-    resize: none;
-
-    border: none;
-    border-bottom: 2px solid #111111;
-    outline: none;
-    &:hover,
-    &:focus {
-      border-bottom: 2px solid #46C1AE;
-    }
-  }
-  textarea {
-    box-sizing: border-box;
-    padding: 10px 20px;
-
-    border: 2px solid #111111;
-    &:hover,
-    &:focus {
-      border: 2px solid #46C1AE;
-    }
-  }
-}
-
 .main-form__required-field {
-  margin-bottom: 30px;
+  margin-bottom: 24px;
 }
 
 .main-form__btn {
@@ -209,16 +237,24 @@ input[type='checkbox']:checked + label::after {
 }
 
 @media (min-width: 750px) {
+  .main-form {
+    margin-bottom: 29px;
+  }
   .main-form__title {
-    margin-bottom: 65px;
+    margin-bottom: 73px;
+    padding: 93px 0 82px 0;
 
     font-size: 43px;
-    line-height: 64px;
+    line-height: 50px;
   }
   .main-form__description {
     margin-bottom: 65px;
 
     @include container-tablet;
+  }
+  .main-form__slogan {
+    font-size: 17px;
+    line-height: 30px;
   }
   .main-form__fieldset-wrapper {
         flex-direction: row;
@@ -235,21 +271,32 @@ input[type='checkbox']:checked + label::after {
   .main-form__fieldset-title {
     width: 25%;
 
-    align-self: baseline;
+    -ms-flex-item-align: baseline;
+
+        align-self: baseline;
+    &--client-message {
+      -ms-flex-item-align: start;
+          align-self: flex-start;
+    }
     &::before {
       display: none;
     }
   }
   .main-form__fieldset {
     margin-bottom: 0;
-    padding: 50px 0 25px 0;
+    padding: 54px 0 11px 0;
     &--color,
     &--phone,
     &--mail {
       background-color: $bg-grey;
     }
+    &--color {
+      padding: 32px 0 41px 0;
+    }
+    &--client-contacts {
+      padding: 50px 0 9px 0;
+    }
     &--phone {
-      margin: 0;
       padding-bottom: 0;
     }
     &--mail {
@@ -259,7 +306,9 @@ input[type='checkbox']:checked + label::after {
   .main-form__filter {
     width: 75%;
 
-    align-self: baseline;
+    -ms-flex-item-align: baseline;
+
+        align-self: baseline;
     &--color {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -280,9 +329,11 @@ input[type='checkbox']:checked + label::after {
     }
   }
   .main-form__filter-item {
-    padding: 0 0 30px 0;
+    margin-bottom: 60px;
     &--color {
-      width: 45%;
+      width: 40%;
+      margin-bottom: 0;
+      padding: 29.5px 0;
     }
   }
   .main-form__filter-item {
@@ -293,10 +344,17 @@ input[type='checkbox']:checked + label::after {
 
       background-color: $bg-grey;
     }
+    &--phone {
+      margin-bottom: 24px;
+      padding: 0;
+    }
     &--name {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
+
+      margin-bottom: 37px;
+      padding: 0;
 
       font-weight: 600;
       label,
@@ -311,6 +369,15 @@ input[type='checkbox']:checked + label::after {
         padding-right: 25px;
       }
     }
+    &--mail {
+      margin-bottom: 39px;
+    }
+    &--client-message {
+      margin-bottom: 51px;
+    }
+  }
+  .main-form__filter-radio {
+    padding-left: 20px;
   }
   .main-form__submit-area {
     display: -webkit-box;
@@ -323,15 +390,21 @@ input[type='checkbox']:checked + label::after {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
     -ms-flex-direction: row-reverse;
-    align-items: baseline;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
     button {
       box-sizing: border-box;
-      width: 30%;
+      width: 34.5%;
       height: 51px;
     }
+  }
+  .main-form__required-field {
+    font-size: 17px;
+    line-height: 30px;
   }
   .main-form__filter-checkbox {
     padding-left: 20px;
@@ -358,7 +431,8 @@ input[type='checkbox']:checked + label::after {
 
 @media (min-width: 1150px) {
   .main-form__title {
-    padding: 92px 0 86px 0;
+    margin-bottom: 123px;
+    padding: 95px 0 100px 0;
     h1 {
       font-size: 53px;
       line-height: 57px;
@@ -376,23 +450,34 @@ input[type='checkbox']:checked + label::after {
   }
   .main-form__filter {
     box-sizing: border-box;
-    width: 90%;
+    width: 87%;
     &--text {
-      padding-right: 175px;
+      padding: 0 145px 0 19px;
     }
   }
   .main-form__filter-item {
     &--color {
       width: 33%;
     }
+    &--client-message {
+      margin-bottom: 47px;
+    }
+    textarea {
+      font-size: 19px;
+    }
   }
   .main-form__fieldset-wrapper--wrap {
     h2 {
-      align-self: inherit;
+      -ms-flex-item-align: inherit;
+          -ms-grid-row-align: inherit;
+          align-self: inherit;
     }
   }
   .main-form__submit-area {
-    padding-right: 175px;
-    padding-left: 10%;
+    padding-right: 188px;
+    padding-left: 116px;
+    button {
+      width: 33.5%;
+    }
   }
 }
