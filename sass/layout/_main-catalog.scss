@@ -49,6 +49,19 @@
   &:last-child {
     margin-bottom: 29px;
   }
+  &:hover {
+    .main-catalog__item-text {
+      transition: all 0.2s;
+      box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+    }
+  }
+  &:active {
+    .main-catalog__item-text {
+      transition: all 0.2s;
+
+      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+    }
+  }
 }
 
 .main-catalog__item-picture {

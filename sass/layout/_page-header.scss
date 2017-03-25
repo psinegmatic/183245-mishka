@@ -63,10 +63,18 @@
 
   border: none;
   outline: none;
-  background-color: #FFFFFF;
   background-image: url(../img/icon-menu-close.svg);
+  background-color: #FFFFFF;
+
   background-repeat: no-repeat;
   background-position: center;
+  &--active {
+    background-image: url(../img/icon-menu-close.svg);
+  }
+
+  &--unactive {
+    background-image: url(../img/icon-menu-open.svg);
+  }
 }
 
 .page-header__delivery {
@@ -78,7 +86,10 @@
 .user-block {
   width: 100%;
   &--closed {
-    /* display: none;*/
+      display: none;
+    }
+  &--nojs {
+      display: block;
   }
 }
 
@@ -149,6 +160,7 @@
     }
   }
   .user-block {
+    display: block;
     box-sizing: border-box;
     width: 52%;
     -webkit-box-ordinal-group: 21;
@@ -199,7 +211,7 @@
     width: 25%;
     margin: 0;
     padding-top: 6px;
-
+    padding-right: 65px;
     text-align: center;
 
     -webkit-box-ordinal-group: 21;

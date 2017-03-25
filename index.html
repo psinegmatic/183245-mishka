@@ -90,8 +90,8 @@
               <img src="img/logo-mobile.svg" alt="MISHKA">
             </picture>
           </a>
-          <button class="page-header__toogle" type="button">Открыть меню</button>
-          <nav class="main-nav  main-nav--closed">
+          <button class="page-header__toogle  page-header__toogle--unactive" type="button">Открыть меню</button>
+          <nav class="main-nav  main-nav--closed  main-nav--nojs">
             <ul class="main-nav__items">
               <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
               <li class="main-nav__item"><a href="form.html">Вязание на заказ</a></li>
@@ -100,7 +100,7 @@
               <li class="page-header__delivery  page-header__delivery--hide"><span>Бесплатная доставка по России</span></li>
             </ul>
           </nav>
-          <div class="user-block  user-block--closed">
+          <div class="user-block  user-block--closed  user-block--nojs">
             <ul class="user-block__items">
               <li class="user-block__item  user-block__item--search"><a href="#">
                 <svg class="user-block__icon-search" width="20" height="20">
@@ -207,7 +207,7 @@
                           <span class="reviews__author-login">@misssssiskras</span>
                         </div>
                         <div class="reviews__slider-contorls">
-                        <button class="reviews__btn reviews__btn--prev" type="button"></button>
+                          <button class="reviews__btn reviews__btn--prev" type="button"></button>
                           <button class="reviews__btn reviews__btn--next" type="button"></button>
                         </div>
                         <a href="#" class="reviews__btn-write  btn">Написать</a>
@@ -257,5 +257,6 @@
                       </svg></a></div>
                     </div>
                   </footer>
+                  <script src="js/script.js"></script>
                 </body>
                 </html>
