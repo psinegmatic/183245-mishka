@@ -17,6 +17,25 @@
   }
 }
 
+.developer-logo {
+  display: flex;
+}
+.page-footer__logo-link,
+.social-link a,
+.developer-logo {
+  &:hover {
+    fill: #46c1ae;
+    transition: 0.2s;
+  }
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.developer-logo {
+  fill: #63d1bb;
+}
+
 .page-footer__social {
   padding: 27px 62px 19px 56px;
 
