@@ -49,11 +49,11 @@
   margin-bottom: 31px;
   background: url('../../img/map-mobile@1x.jpg') no-repeat;
 
-  background-position: 65px;
+  background-position: 50%;
   min-height: 456px;
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     background: url('../../img/map-mobile@2x.jpg') no-repeat;
-    background-position: 30px;
+    background-position: 50%;
     background-size: 320px 456px;
   }
   iframe {
@@ -125,7 +125,7 @@
     background-position: 130px;
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     background: url('../../img/map-tablet@2x.jpg') no-repeat;
-    background-position: 130px;
+    background-position: 50%;
     background-size: 768px 456px;
   }
   }
