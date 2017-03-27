@@ -75,6 +75,7 @@
     justify-content: space-between;
     p {
       width: 100%;
+      padding-right: 10px;
       margin-bottom: 14px;
       font-size: 17px;
       line-height: 30px;
@@ -142,6 +143,7 @@
     margin-bottom: 36px;
     flex-wrap: wrap;
     p {
+          padding-right: 0;
       span {
         padding-top: 0;
       }
