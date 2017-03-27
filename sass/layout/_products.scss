@@ -2,8 +2,19 @@
 @import 'utils/variables.scss';
 
 .products {
+  position: relative;
   width: auto;
   margin-bottom: 69px;
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: -53px;
+    width: 100%;
+    height: 18px;
+    background-image: url(../img/bg-zigzag-line.svg);
+    background-repeat: repeat-x;
+    background-size: auto 6px;
+  }
 }
 
 .products__wrapper {
@@ -82,7 +93,11 @@
 
 @media (min-width: 750px) {
   .products {
-    margin-bottom: 119px;
+    margin-bottom: 97px;
+    &:after {
+      height: 22px;
+      background-size: auto 16px;
+    }
   }
   .products__wrapper {
     @include container-tablet;
@@ -123,13 +138,13 @@
     order: 20;
   }
   .products__picture {
-    width: 40%;
+    width: 50%;
 
     order: 30;
   }
   .products__item-buy {
     width: 44%;
-    margin-top: -45px;
+    margin-top: -133px;
 
     order: 50;
   }
@@ -142,6 +157,10 @@
 @media (min-width: 1150px) {
   .products {
     margin-bottom: 134px;
+    &:after {
+      background-size: auto 23px;
+      bottom: -72px;
+    }
   }
   .products__item {
     position: relative;

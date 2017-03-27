@@ -17,6 +17,25 @@
   }
 }
 
+.developer-logo {
+  display: flex;
+}
+.page-footer__logo-link,
+.social-link a,
+.developer-logo {
+  &:hover {
+    fill: #46c1ae;
+    transition: 0.2s;
+  }
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.developer-logo {
+  fill: #63d1bb;
+}
+
 .page-footer__social {
   padding: 27px 62px 19px 56px;
 
@@ -30,6 +49,7 @@
 
   justify-content: space-around;
   span {
+    padding-right: 30px;
     font-size: 19px;
     font-weight: bold;
     line-height: 30px;
@@ -38,7 +58,7 @@
 
 @media (min-width: 750px) {
   .page-footer__wrapper {
-    padding: 56px 0 43px 0;
+    padding: 52px 0 43px 0;
     @include container-tablet;
     display: flex;
     align-items: center;

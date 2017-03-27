@@ -37,13 +37,20 @@
   margin-bottom: 15px;
 
   text-align: center;
+  &:hover {
+    opacity: 0.6;
+    transition: all 0.2s;
+  }
+  &:active {
+    opacity: 0.3;
+  }
 }
 
-.page-header__toogle {
+.page-header__toggle {
   position: absolute;
   z-index: 100;
-  top: 30px;
-  right: 20px;
+  top: 28px;
+  right: 30px;
 
   display: block;
 
@@ -56,10 +63,18 @@
 
   border: none;
   outline: none;
-  background-color: #FFFFFF;
   background-image: url(../img/icon-menu-close.svg);
+  background-color: #FFFFFF;
+
   background-repeat: no-repeat;
   background-position: center;
+  &--active {
+    background-image: url(../img/icon-menu-close.svg);
+  }
+
+  &--unactive {
+    background-image: url(../img/icon-menu-open.svg);
+  }
 }
 
 .page-header__delivery {
@@ -67,20 +82,64 @@
     display: none;
   }
 }
+
+.user-block {
+  width: 100%;
+  &--closed {
+      display: none;
+    }
+  &--nojs {
+      display: block;
+  }
+}
+@media (max-width: 750px) {
+  .user-block {
+    &--nojs {
+      position: absolute;
+      background-color: #ffffff;
+      top: 237px;
+      z-index: 100;
+    }
+    &--opened {
+      display: block;
+      position: absolute;
+      background-color: #ffffff;
+      top: 237px;
+      z-index: 100;
+    }
+  }
+}
 .user-block__item {
+  position: relative;
   border-top: 1px solid #ECECEC;
   a {
     display: block;
 
     padding: 27px 0 27px 60px;
+    &:hover {
+      color: rgba(0, 0, 0, 0.6);
+      transition: all 0.2s;
+      svg {
+        fill: #63d1bb;
+      }
+    }
+    &:active {
+      opacity: 0.6;
+    }
   }
 }
 
-.user-block {
-  width: 100%;
-  &--closed {
-    /* display: none;*/
-  }
+.user-block__icon-search {
+  position: absolute;
+  left: 18px;
+  top: 30px;
+  fill: #d3d2d2;
+}
+.user-block__icon-cart {
+  position: absolute;
+  left: 18px;
+  top: 30px;
+  fill: #d3d2d2;
 }
 
 @media (min-width: 750px) {
@@ -100,7 +159,7 @@
         -ms-flex-order: 10;
             order: 10;
   }
-  .page-header__toogle {
+  .page-header__toggle {
     display: none;
   }
   .page-header__delivery {
@@ -117,6 +176,7 @@
     }
   }
   .user-block {
+    display: block;
     box-sizing: border-box;
     width: 52%;
     -webkit-box-ordinal-group: 21;
@@ -150,6 +210,11 @@
       font-size: 0;
     }
   }
+  .user-block__icon-search,
+  .user-block__icon-cart {
+  left: 31px;
+  top: 33px;
+  }
 }
 
 @media (min-width: 1150px) {
@@ -161,8 +226,8 @@
   .page-header__logo {
     width: 25%;
     margin: 0;
-    padding-top: 25px;
-
+    padding-top: 6px;
+    padding-right: 65px;
     text-align: center;
 
     -webkit-box-ordinal-group: 21;

@@ -58,3 +58,9 @@ fieldset {
 
   border: none;
 }
+
+
+svg, svg * {
+    fill: inherit;
+    stroke: inherit;
+}

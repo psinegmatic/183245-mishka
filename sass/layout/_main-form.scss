@@ -96,6 +96,7 @@
 }
 
 .main-form__filter-item {
+  position: relative;
   margin-bottom: 24px;
 
   line-height: 17px;
@@ -108,6 +109,7 @@
   }
   input,
   textarea {
+    position: relative;
     width: 100%;
     padding: 10px 0;
 
@@ -119,9 +121,47 @@
     border: none;
     border-bottom: 2px solid #111111;
     outline: none;
+    &::-webkit-input-placeholder {
+      color: #d6d6d6;
+    }
+    &::-moz-placeholder {
+      color: #d6d6d6;
+    }
+    &:-ms-input-placeholder {
+      color: #d6d6d6;
+    }
+    &::placeholder {
+      color: #d6d6d6;
+    }
     &:hover,
+    &:active,
     &:focus {
       border-bottom: 2px solid #46C1AE;
+      &+svg {
+        fill: #46C1AE;
+      }
+    }
+    &:focus {
+      &::-webkit-input-placeholder {
+        opacity: 0;
+        -webkit-transition: opacity 0.7s ease;
+        transition: opacity 0.7s ease;
+      }
+      &::-moz-placeholder {
+        opacity: 0;
+        -webkit-transition: opacity 0.7s ease;
+        transition: opacity 0.7s ease;
+      }
+      &:-ms-input-placeholder {
+        opacity: 0;
+        -webkit-transition: opacity 0.7s ease;
+        transition: opacity 0.7s ease;
+      }
+      &::placeholder {
+        opacity: 0;
+        -webkit-transition: opacity 0.7s ease;
+        transition: opacity 0.7s ease;
+      }
     }
   }
   textarea {
@@ -138,6 +178,12 @@
   }
 }
 
+.main-form__input-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  fill: #cccccc;
+}
 .main-form__filter {
   padding-left: 60px;
   &--text {
@@ -211,7 +257,7 @@
 
     border-radius: 0;
     background-color: transparent;
-    background-image: url(../../img/icon-tick.svg);
+    background-image: url("../img/icon-tick.svg");
     background-repeat: no-repeat;
   }
 }
@@ -284,7 +330,7 @@ input[type='checkbox']:checked + label::after {
   }
   .main-form__fieldset {
     margin-bottom: 0;
-    padding: 54px 0 11px 0;
+    padding: 54px 0 6px 0;
     &--color,
     &--phone,
     &--mail {
