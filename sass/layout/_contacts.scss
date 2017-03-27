@@ -16,8 +16,11 @@
     }
   }
 }
-
+.contacts__item-field {
+  width: 30%;
+}
 .contacts__item-mail {
+  width: 70%;
   padding-top: 25px;
 
   border-bottom: 1px solid #62D1BA;
@@ -75,7 +78,6 @@
     justify-content: space-between;
     p {
       width: 100%;
-      padding-right: 10px;
       margin-bottom: 14px;
       font-size: 17px;
       line-height: 30px;
@@ -123,7 +125,7 @@
     margin-bottom: 48px;
     background: url("../img/map-tablet@1x.jpg") no-repeat;
 
-    background-position: 130px;
+    background-position: 50%;
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     background: url("../img/map-tablet@2x.jpg") no-repeat;
     background-position: 50%;

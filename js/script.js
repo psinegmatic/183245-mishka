@@ -5,7 +5,7 @@ var mainNav = document.querySelector(".main-nav");
 var userBlock = document.querySelector(".user-block");
 var overLay = document.querySelector(".overlay");
 var pageModal = document.querySelector(".page-modal");
-var cartButton = document.querySelector(".user-block__item--busket");
+var cartButton = document.querySelectorAll(".btn-buy");
 
 mainNav.classList.remove("main-nav--nojs");
 mainNav.classList.add("main-nav--closed");
@@ -36,12 +36,15 @@ burgerButton.addEventListener("click", function () {
 }
 });
 
-cartButton.addEventListener("click", function () {
+cartButton.forEach(item => {
+  item.addEventListener("click", function (event) {
+    event.preventDefault();
     if (pageModal.classList.contains("page-modal--closed")) {
         pageModal.classList.remove("page-modal--closed");
         overLay.classList.remove("overlay--closed");
         overLay.classList.add("overlay--opened");
     }
+});
 });
 
 overLay.addEventListener("click", function () {

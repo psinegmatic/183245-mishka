@@ -92,7 +92,23 @@
       display: block;
   }
 }
-
+@media (max-width: 750px) {
+  .user-block {
+    &--nojs {
+      position: absolute;
+      background-color: #ffffff;
+      top: 237px;
+      z-index: 100;
+    }
+    &--opened {
+      display: block;
+      position: absolute;
+      background-color: #ffffff;
+      top: 237px;
+      z-index: 100;
+    }
+  }
+}
 .user-block__item {
   position: relative;
   border-top: 1px solid #ECECEC;

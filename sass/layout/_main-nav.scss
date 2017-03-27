@@ -40,7 +40,23 @@
     display: block;
   }
 }
-
+@media (max-width: 750px) {
+  .main-nav {
+    &--nojs {
+      position: absolute;
+      background-color: #ffffff;
+      top: 79px;
+      z-index: 100;
+    }
+    &--opened {
+      display: block;
+      position: absolute;
+      background-color: #ffffff;
+      top: 79px;
+      z-index: 100;
+    }
+  }
+}
 @media (min-width: 750px) {
   .main-nav {
     display: block;
