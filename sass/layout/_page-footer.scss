@@ -49,6 +49,7 @@
 
   justify-content: space-around;
   span {
+    padding-right: 30px;
     font-size: 19px;
     font-weight: bold;
     line-height: 30px;
@@ -57,7 +58,7 @@
 
 @media (min-width: 750px) {
   .page-footer__wrapper {
-    padding: 56px 0 43px 0;
+    padding: 52px 0 43px 0;
     @include container-tablet;
     display: flex;
     align-items: center;

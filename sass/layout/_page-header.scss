@@ -46,11 +46,11 @@
   }
 }
 
-.page-header__toogle {
+.page-header__toggle {
   position: absolute;
   z-index: 100;
-  top: 30px;
-  right: 20px;
+  top: 28px;
+  right: 30px;
 
   display: block;
 
@@ -143,7 +143,7 @@
         -ms-flex-order: 10;
             order: 10;
   }
-  .page-header__toogle {
+  .page-header__toggle {
     display: none;
   }
   .page-header__delivery {

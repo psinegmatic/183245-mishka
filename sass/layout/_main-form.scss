@@ -121,6 +121,15 @@
     border: none;
     border-bottom: 2px solid #111111;
     outline: none;
+    &::-webkit-input-placeholder {
+      color: #d6d6d6;
+    }
+    &::-moz-placeholder {
+      color: #d6d6d6;
+    }
+    &:-ms-input-placeholder {
+      color: #d6d6d6;
+    }
     &::placeholder {
       color: #d6d6d6;
     }
@@ -133,8 +142,24 @@
       }
     }
     &:focus {
+      &::-webkit-input-placeholder {
+        opacity: 0;
+        -webkit-transition: opacity 0.7s ease;
+        transition: opacity 0.7s ease;
+      }
+      &::-moz-placeholder {
+        opacity: 0;
+        -webkit-transition: opacity 0.7s ease;
+        transition: opacity 0.7s ease;
+      }
+      &:-ms-input-placeholder {
+        opacity: 0;
+        -webkit-transition: opacity 0.7s ease;
+        transition: opacity 0.7s ease;
+      }
       &::placeholder {
         opacity: 0;
+        -webkit-transition: opacity 0.7s ease;
         transition: opacity 0.7s ease;
       }
     }
@@ -232,7 +257,7 @@
 
     border-radius: 0;
     background-color: transparent;
-    background-image: url(../../img/icon-tick.svg);
+    background-image: url("../img/icon-tick.svg");
     background-repeat: no-repeat;
   }
 }
@@ -305,7 +330,7 @@ input[type='checkbox']:checked + label::after {
   }
   .main-form__fieldset {
     margin-bottom: 0;
-    padding: 54px 0 11px 0;
+    padding: 54px 0 6px 0;
     &--color,
     &--phone,
     &--mail {

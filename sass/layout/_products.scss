@@ -8,12 +8,12 @@
   &:after {
     content: "";
     position: absolute;
-    bottom: -50px;
+    bottom: -53px;
     width: 100%;
-    height: 23px;
+    height: 18px;
     background-image: url(../img/bg-zigzag-line.svg);
     background-repeat: repeat-x;
-    background-size: auto 9px;
+    background-size: auto 6px;
   }
 }
 
@@ -93,9 +93,10 @@
 
 @media (min-width: 750px) {
   .products {
-    margin-bottom: 119px;
+    margin-bottom: 97px;
     &:after {
-      background-size: auto 23px;
+      height: 22px;
+      background-size: auto 16px;
     }
   }
   .products__wrapper {
@@ -143,7 +144,7 @@
   }
   .products__item-buy {
     width: 44%;
-    margin-top: -130px;
+    margin-top: -133px;
 
     order: 50;
   }
@@ -156,6 +157,10 @@
 @media (min-width: 1150px) {
   .products {
     margin-bottom: 134px;
+    &:after {
+      background-size: auto 23px;
+      bottom: -72px;
+    }
   }
   .products__item {
     position: relative;

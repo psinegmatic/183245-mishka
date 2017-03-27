@@ -1,6 +1,11 @@
+"use strict";
+
 var burgerButton = document.querySelector(".page-header__toggle");
 var mainNav = document.querySelector(".main-nav");
 var userBlock = document.querySelector(".user-block");
+var overLay = document.querySelector(".overlay");
+var pageModal = document.querySelector(".page-modal");
+var cartButton = document.querySelector(".user-block__item--busket");
 
 mainNav.classList.remove("main-nav--nojs");
 mainNav.classList.add("main-nav--closed");
@@ -29,4 +34,29 @@ burgerButton.addEventListener("click", function () {
         burgerButton.classList.add("page-header__toggle--unactive");
         burgerButton.classList.remove("page-header__toggle--avtive");
 }
+});
+
+cartButton.addEventListener("click", function () {
+    if (pageModal.classList.contains("page-modal--closed")) {
+        pageModal.classList.remove("page-modal--closed");
+        overLay.classList.remove("overlay--closed");
+        overLay.classList.add("overlay--opened");
+    }
+});
+
+overLay.addEventListener("click", function () {
+    if (overLay.classList.contains("overlay--opened")) {
+        pageModal.classList.add("page-modal--closed");
+        overLay.classList.add("overlay--closed");
+    }
+});
+
+window.addEventListener("keydown", function(event) {
+    if (event.keyCode === 27) {
+      if (overLay.classList.contains("overlay--opened")) {
+            overLay.classList.remove("overlay--opened");
+            overLay.classList.add("overlay--closed");
+            pageModal.classList.add("page-modal--closed");
+      }
+    }
 });
