@@ -89,3 +89,43 @@
     }
   }
 }
+
+@media (min-width:1150px) {
+  .main-nav {
+    width: 40%;
+
+    -webkit-box-ordinal-group: 11;
+
+    -ms-flex-order: 10;
+
+    order: 10;
+  }
+  .main-nav__item {
+    box-sizing: border-box;
+    width: 44%;
+    a {
+      padding: 32px 0 33px 0;
+
+      font-size: 17px;
+    }
+    &--hide {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      a {
+        padding-top: 20px;
+
+        font-size: 15px;
+      }
+    }
+    &:first-child {
+      border-right: 1px solid #ECECEC;
+    }
+    &:nth-child(2n) {
+      a {
+        padding-left: 35px;
+      }
+    }
+  }
+
+}
