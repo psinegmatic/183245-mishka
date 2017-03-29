@@ -53,7 +53,7 @@ gulp.task("html:update", ["html:copy"], function(done) {
 });
 
 gulp.task("symbols", function() {
-  return gulp.src("build/img/icons.svg")
+  return gulp.src("build/img/icons/*.svg")
     .pipe(svgmin())
     .pipe(svgstore({
       inlineSvg: true
