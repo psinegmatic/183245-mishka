@@ -43,16 +43,14 @@
 @media (max-width: 750px) {
   .main-nav {
     &--nojs {
-      position: absolute;
-      background-color: #ffffff;
-      top: 79px;
-      z-index: 100;
+      display: block;
     }
     &--opened {
       display: block;
       position: absolute;
       background-color: #ffffff;
       top: 79px;
+      left: 0;
       z-index: 100;
     }
   }
@@ -76,6 +74,11 @@
   }
   .main-nav__item {
     border: 0;
+    &:nth-child(2) {
+      a {
+        padding-left: 14px;
+      }
+    }
     a {
       padding: 17px 32px 23px 0;
 
