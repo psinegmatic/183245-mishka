@@ -56,9 +56,18 @@
   }
 }
 
+.footer__developer-icon {
+  width: 35px;
+  height: 35px;
+}
+
 @media (min-width: 750px) {
+  .page-footer {
+    width: 100%;
+    margin: 0 auto;
+  }
   .page-footer__wrapper {
-    padding: 52px 0 43px 0;
+    padding: 48px 50px 43px 50px;
     @include container-tablet;
     display: flex;
     align-items: center;
@@ -89,9 +98,17 @@
   .footer__developer {
     padding: 0;
   }
+  .footer__logo {
+    width: 100px;
+    height: 40px;
+  }
 }
 
 @media (min-width: 1150px) {
+  .page-footer {
+    width: 100%;
+    margin: o auto;
+  }
   .page-footer__wrapper {
     @include container-desktop;
   }
