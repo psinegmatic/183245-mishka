@@ -147,7 +147,7 @@
   }
   .page-header__wrapper {
     position: relative;
-    width: 100%;
+    width: 768px;
     box-sizing: border-box;
     padding: 0 33px 0 50px;
 
@@ -155,7 +155,7 @@
   }
   .page-header__logo {
     box-sizing: border-box;
-    width: 48%;
+    width: 46%;
 
     text-align: left;
     -webkit-box-ordinal-group: 11;
@@ -181,7 +181,7 @@
   .user-block {
     display: block;
     box-sizing: border-box;
-    width: 52%;
+    width: 53.5%;
     -webkit-box-ordinal-group: 21;
         -ms-flex-order: 20;
             order: 20;
@@ -191,7 +191,7 @@
     display: -ms-flexbox;
     display: flex;
     a {
-      padding: 31px 13px 33px 0;
+      padding: 31px 30px 33px 0;
     }
     .user-block__item {
       border: 0;
@@ -229,8 +229,9 @@
     margin: auto;
   }
   .page-header__wrapper {
-
+    width: 1150px;
     margin-bottom: -78px;
+    padding: 0 50px;
   }
   .page-header__logo {
     width: 25%;
