@@ -312,10 +312,11 @@ input[type='checkbox']:checked + label::after {
   }
   .main-form__description {
     margin-bottom: 2px;
-    padding: 0 50px;
-    width: 100%;
+    padding: 0 auto;
+    width: 768px;
   }
   .main-form__slogan {
+    padding: 0 90px 0 50px;
     font-size: 17px;
     line-height: 30px;
   }
@@ -334,6 +335,7 @@ input[type='checkbox']:checked + label::after {
   }
   .main-form__fieldset-title {
     width: 25%;
+    margin-bottom: 0;
 
     -ms-flex-item-align: baseline;
 
@@ -358,7 +360,11 @@ input[type='checkbox']:checked + label::after {
       padding: 32px 50px 41px 50px;
     }
     &--client-contacts {
-      padding: 50px 50px 9px 50px;
+      padding: 57px 50px 9px 50px;
+      h2 {
+        align-self: stretch;
+        line-height: 27px;
+      }
     }
     &--phone {
       padding-bottom: 0;
@@ -515,7 +521,10 @@ input[type='checkbox']:checked + label::after {
     }
   }
   .main-form__description {
-    width: 684px;
+    width: 707px;
+  }
+  .main-form__slogan {
+    padding: 0 50px 0 0px;
   }
   .main-form__fieldset {
     padding: 54px 113px 6px;
@@ -523,7 +532,7 @@ input[type='checkbox']:checked + label::after {
       padding: 33px 113px 39px;
     }
     &--client-contacts {
-      padding: 50px 113px 11px;
+      padding: 60px 113px 11px;
     }
     &--phone {
       padding: 50px 113px 0px;
