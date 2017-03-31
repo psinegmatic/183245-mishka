@@ -53,6 +53,7 @@
 .preview__list li {
   @include container;
 }
+
 .preview__item {
   a {
     position: relative;
@@ -120,14 +121,12 @@
         width: 500px;
     }
   }
-
   .preview__list {
     display: flex;
     li {
       width: 50%;
     }
   }
-
   .preview__list-wrapper {
     width: 768px;
     margin: 0 auto;
