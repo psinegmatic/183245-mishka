@@ -70,7 +70,6 @@ padding-left: 90px; */
   width: 30px;
 }
 .catalog-promo__text {
-  padding-right: 15px;
   margin-bottom: 24px;
 
   font-size: 13px;
@@ -80,11 +79,14 @@ padding-left: 90px; */
 }
 
 @media (min-width: 750px) {
+  .catalog-promo {
+    margin-bottom: 64px;
+  }
   .catalog-promo__title {
     position: inherit;
 
     width: 100%;
-    margin-bottom: 34px;
+    margin-bottom: 32px;
     padding-left: 65px;
 
     font-size: 20px;
@@ -106,12 +108,12 @@ padding-left: 90px; */
     left: 280px;
   }
   .catalog-promo__info {
-    padding: 38px 42px 46px 42px;
+    padding: 38px 43px 46px 41px;
 
     order: 30;
   }
   .catalog-promo__pic {
-    top: 488px;
+    top: 484px;
   }
   .catalog-promo__text {
     margin-bottom: 34px;

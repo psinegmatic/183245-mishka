@@ -76,7 +76,7 @@
     border: 0;
     &:nth-child(2) {
       a {
-        padding-left: 14px;
+        padding-left: 4px;
       }
     }
     a {
@@ -105,7 +105,7 @@
   }
   .main-nav__item {
     box-sizing: border-box;
-    width: 44%;
+    width: 46%;
     a {
       padding: 32px 0 33px 0;
 
@@ -126,7 +126,7 @@
     }
     &:nth-child(2n) {
       a {
-        padding-left: 35px;
+        padding-left: 27px;
       }
     }
   }

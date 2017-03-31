@@ -12,7 +12,7 @@
   display: -ms-flexbox;
   display: flex;
 
-  margin-bottom: 55px;
+  margin-bottom: 54px;
 
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -42,7 +42,7 @@
 .main-form__description {
   width: 260px;
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-bottom: 17px;
 }
 
 .main-form__slogan {
@@ -55,7 +55,7 @@
   display: -ms-flexbox;
   display: flex;
 
-  margin-bottom: 13px;
+  margin-bottom: 14px;
   &--client-contacts,
   &--phone,
   &--mail {
@@ -66,7 +66,7 @@
 .main-form__fieldset-title {
   position: relative;
 
-  margin-bottom: 26px;
+  margin-bottom: 28px;
 
   font-size: 17px;
 
@@ -511,7 +511,7 @@ input[type='checkbox']:checked + label::after {
 
 @media (min-width: 1150px) {
   .main-form {
-    margin-bottom: 22px;
+    margin-bottom: 24px;
   }
   .main-form__title {
     margin-bottom: 125px;
@@ -525,10 +525,10 @@ input[type='checkbox']:checked + label::after {
     }
   }
   .main-form__description {
-    width: 707px;
+    width: 700px;
   }
   .main-form__slogan {
-    padding: 0 50px 0 0px;
+    padding: 0;
   }
   .main-form__fieldset {
     padding: 54px 113px 6px;
@@ -578,6 +578,9 @@ input[type='checkbox']:checked + label::after {
       font-size: 19px;
     }
   }
+  .main-form__input-icon {
+    right: 5px;
+  }
   .main-form__fieldset-wrapper--wrap {
     h2 {
       -ms-flex-item-align: inherit;
@@ -586,7 +589,7 @@ input[type='checkbox']:checked + label::after {
     }
   }
   .main-form__submit-area {
-    padding-right: 127px;
+    padding-right: 113px;
     padding-left: 113px;
     button {
       width: 33.5%;
