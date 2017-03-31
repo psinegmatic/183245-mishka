@@ -341,6 +341,7 @@ input[type='checkbox']:checked + label::after {
 
         align-self: baseline;
     &--client-message {
+      padding-top: 10px;
       -ms-flex-item-align: start;
           align-self: flex-start;
     }
@@ -371,6 +372,10 @@ input[type='checkbox']:checked + label::after {
     }
     &--mail {
       padding-top: 0;
+      padding-bottom: 11px;
+    }
+    &--client-message {
+      padding: 49px 50px 9px;
     }
   }
   .main-form__filter {
@@ -537,30 +542,37 @@ input[type='checkbox']:checked + label::after {
       padding: 50px 113px 0px;
     }
     &--mail {
-          padding: 2px 113px 11px;
+      padding: 2px 113px 10px;
+    }
+    &--client-message {
+      padding: 39px 113px 11px;
     }
   }
   .main-form__fieldset-wrapper {
     box-sizing: border-box;
-    width: 988px;
+    width: 928px;
   }
   .main-form__fieldset-title {
     box-sizing: border-box;
-    width: 9%;
+    width: 10%;
+    &--client-message {
+      padding-top: 22px;
+    }
   }
   .main-form__filter {
     box-sizing: border-box;
     width: 88%;
     &--text {
-      padding: 0 145px 0 19px;
+      padding: 0 95px 0 19px;
     }
   }
   .main-form__filter-item {
     &--color {
-      width: 33%;
+      width: 28%;
     }
     &--client-message {
       margin-bottom: 47px;
+      padding-top: 10px;
     }
     textarea {
       font-size: 19px;
@@ -574,8 +586,8 @@ input[type='checkbox']:checked + label::after {
     }
   }
   .main-form__submit-area {
-    padding-right: 192px;
-    padding-left: 109px;
+    padding-right: 127px;
+    padding-left: 113px;
     button {
       width: 33.5%;
     }
