@@ -5,7 +5,7 @@
   position: relative;
   display: flex;
 
-  width: 100%;
+  width: 320px;
   margin: 0 auto;
 
   background-color: #F9F9F9;
@@ -53,6 +53,7 @@
 .preview__list li {
   @include container;
 }
+
 .preview__item {
   a {
     position: relative;
@@ -101,7 +102,7 @@
   .preview {
 
     margin-bottom: 14px;
-    width: 100%;
+    width: 768px;
     background-image: url("../img/hero-desktop@1x.jpg");
     background-position: center -2px;
     &:after {
@@ -112,6 +113,7 @@
           background-size: auto 746px;
     }
   }
+
   .preview__title {
       margin-bottom: 252px;
       padding-top: 152px;
@@ -125,11 +127,10 @@
       width: 50%;
     }
   }
-
   .preview__list-wrapper {
     width: 768px;
     margin: 0 auto;
-    padding: 0 34px 0 50px;
+    padding: 0 50px 0 50px;
   }
   .preview__item {
     a {
@@ -147,6 +148,7 @@
 
 @media (min-width: 1150px) {
   .preview {
+    width: 1150px;
     margin-bottom: 6px;
     &:after {
       bottom: -10px;
