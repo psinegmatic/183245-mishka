@@ -3,11 +3,11 @@
 }
 
 .main-form__wrapper {
-  width: 260px;
-  margin: 0 auto;
+  @include container;
 }
 
 .main-form {
+  @include container;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -86,7 +86,7 @@
     top: 50%;
     right: 0;
 
-    width: 195px;
+    width: 198px;
     height: 1px;
 
     content: '';
@@ -97,7 +97,7 @@
 
 .main-form__filter-item {
   position: relative;
-  margin-bottom: 24px;
+  margin-bottom: 23px;
 
   line-height: 17px;
   &--color {
@@ -180,8 +180,10 @@
 
 .main-form__input-icon {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 6px;
+  right: 5px;
+  width: 28px;
+  height: 30px;
   fill: #cccccc;
 }
 .main-form__filter {
@@ -269,6 +271,7 @@ input[type='checkbox']:checked + label::after {
 
 .main-form__required-field {
   margin-bottom: 24px;
+  font-size: 14px;
 }
 
 .main-form__btn {
@@ -284,31 +287,47 @@ input[type='checkbox']:checked + label::after {
 
 @media (min-width: 750px) {
   .main-form {
-    margin-bottom: 29px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 26px;
   }
   .main-form__title {
-    margin-bottom: 73px;
+    position: relative;
+    margin-bottom: 71px;
     padding: 93px 0 82px 0;
 
     font-size: 43px;
     line-height: 50px;
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: -7px;
+      width: 100%;
+      height: 23px;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-repeat: repeat-x;
+      background-size: auto 23px;
+      transition: all 0.4s;
+    }
   }
   .main-form__description {
-    margin-bottom: 65px;
-
-    @include container-tablet;
+    margin-bottom: 2px;
+    padding: 0 auto;
+    width: 768px;
   }
   .main-form__slogan {
+    padding: 0 90px 0 50px;
     font-size: 17px;
     line-height: 30px;
   }
   .main-form__fieldset-wrapper {
+    width: 668px;
+    margin: 0 auto;
         flex-direction: row;
 
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
-    @include container-tablet;
     &--wrap {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
@@ -316,6 +335,7 @@ input[type='checkbox']:checked + label::after {
   }
   .main-form__fieldset-title {
     width: 25%;
+    margin-bottom: 0;
 
     -ms-flex-item-align: baseline;
 
@@ -330,17 +350,21 @@ input[type='checkbox']:checked + label::after {
   }
   .main-form__fieldset {
     margin-bottom: 0;
-    padding: 54px 0 6px 0;
+    padding: 54px 50px 6px 50px;
     &--color,
     &--phone,
     &--mail {
       background-color: $bg-grey;
     }
     &--color {
-      padding: 32px 0 41px 0;
+      padding: 32px 50px 41px 50px;
     }
     &--client-contacts {
-      padding: 50px 0 9px 0;
+      padding: 57px 50px 9px 50px;
+      h2 {
+        align-self: stretch;
+        line-height: 27px;
+      }
     }
     &--phone {
       padding-bottom: 0;
@@ -422,6 +446,12 @@ input[type='checkbox']:checked + label::after {
       margin-bottom: 51px;
     }
   }
+  .main-form__input-icon {
+    top: -6px;
+    right: 23px;
+    width: 32px;
+    height: 31px;
+  }
   .main-form__filter-radio {
     padding-left: 20px;
   }
@@ -470,33 +500,57 @@ input[type='checkbox']:checked + label::after {
   .main-form__filter-checkbox::after {
     top: 7px;
     left: -50px;
-
     width: 33px;
   }
 }
 
 @media (min-width: 1150px) {
+  .main-form {
+    margin-bottom: 22px;
+  }
   .main-form__title {
-    margin-bottom: 123px;
-    padding: 95px 0 100px 0;
+    margin-bottom: 125px;
+    padding: 93px 0 100px 0;
+    &:after {
+      background-size: auto 32px;
+    }
     h1 {
       font-size: 53px;
       line-height: 57px;
     }
   }
+  .main-form__description {
+    width: 707px;
+  }
+  .main-form__slogan {
+    padding: 0 50px 0 0px;
+  }
+  .main-form__fieldset {
+    padding: 54px 113px 6px;
+    &--color {
+      padding: 33px 113px 39px;
+    }
+    &--client-contacts {
+      padding: 60px 113px 11px;
+    }
+    &--phone {
+      padding: 50px 113px 0px;
+    }
+    &--mail {
+          padding: 2px 113px 11px;
+    }
+  }
   .main-form__fieldset-wrapper {
     box-sizing: border-box;
-    padding-left: 60px;
-
-    @include container-desktop;
+    width: 988px;
   }
   .main-form__fieldset-title {
     box-sizing: border-box;
-    width: 10%;
+    width: 9%;
   }
   .main-form__filter {
     box-sizing: border-box;
-    width: 87%;
+    width: 88%;
     &--text {
       padding: 0 145px 0 19px;
     }
@@ -520,8 +574,8 @@ input[type='checkbox']:checked + label::after {
     }
   }
   .main-form__submit-area {
-    padding-right: 188px;
-    padding-left: 116px;
+    padding-right: 192px;
+    padding-left: 109px;
     button {
       width: 33.5%;
     }

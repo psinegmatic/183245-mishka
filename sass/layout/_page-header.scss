@@ -95,16 +95,14 @@
 @media (max-width: 750px) {
   .user-block {
     &--nojs {
-      position: absolute;
-      background-color: #ffffff;
-      top: 237px;
-      z-index: 100;
+      display: block;
     }
     &--opened {
       display: block;
       position: absolute;
       background-color: #ffffff;
       top: 237px;
+      left: 0;
       z-index: 100;
     }
   }
@@ -143,16 +141,21 @@
 }
 
 @media (min-width: 750px) {
+  .page-header {
+    width: 100%;
+    margin: auto;
+  }
   .page-header__wrapper {
     position: relative;
-
-    @include container-tablet;
+    width: 768px;
+    box-sizing: border-box;
+    padding: 0 33px 0 50px;
 
     margin-bottom: -65px;
   }
   .page-header__logo {
     box-sizing: border-box;
-    width: 48%;
+    width: 46%;
 
     text-align: left;
     -webkit-box-ordinal-group: 11;
@@ -166,7 +169,7 @@
     &--hide {
       position: absolute;
       top: 106px;
-      right: 7px;
+      right: 43px;
 
       display: block;
 
@@ -178,7 +181,7 @@
   .user-block {
     display: block;
     box-sizing: border-box;
-    width: 52%;
+    width: 53.5%;
     -webkit-box-ordinal-group: 21;
         -ms-flex-order: 20;
             order: 20;
@@ -188,7 +191,7 @@
     display: -ms-flexbox;
     display: flex;
     a {
-      padding: 31px 14px 33px 0;
+      padding: 31px 30px 33px 0;
     }
     .user-block__item {
       border: 0;
@@ -213,15 +216,22 @@
   .user-block__icon-search,
   .user-block__icon-cart {
   left: 31px;
-  top: 33px;
+  top: 35px;
+  }
+  .user-block__icon-search {
+    width: 22px;
   }
 }
 
 @media (min-width: 1150px) {
+  .page-header {
+    width: 100%;
+    margin: auto;
+  }
   .page-header__wrapper {
-    @include container-desktop;
-
+    width: 1150px;
     margin-bottom: -78px;
+    padding: 0 50px;
   }
   .page-header__logo {
     width: 25%;
@@ -235,15 +245,6 @@
         -ms-flex-order: 20;
 
             order: 20;
-  }
-  .main-nav {
-    width: 40%;
-
-    -webkit-box-ordinal-group: 11;
-
-        -ms-flex-order: 10;
-
-            order: 10;
   }
   .user-block {
     width: 33.5%;
@@ -271,32 +272,5 @@
   .main-nav__items {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-  }
-  .main-nav__item {
-    box-sizing: border-box;
-    width: 44%;
-    a {
-      padding: 32px 0 33px 0;
-
-      font-size: 17px;
-    }
-    &--hide {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      a {
-        padding-top: 20px;
-
-        font-size: 15px;
-      }
-    }
-    &:first-child {
-      border-right: 1px solid #ECECEC;
-    }
-    &:nth-child(2n) {
-      a {
-        padding-left: 35px;
-      }
-    }
   }
 }

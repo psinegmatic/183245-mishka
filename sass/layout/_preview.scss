@@ -11,9 +11,11 @@
   background-color: #F9F9F9;
   background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: center -18px;
 
   flex-wrap: wrap;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in, ease, linear;
   &:after {
     position: absolute;
     bottom: -7px;
@@ -22,17 +24,18 @@
     background-image: url("../img/bg-zigzag-fill.svg");
     background-repeat: repeat-x;
     background-size: auto 23px;
+    transition: all 0.4s;
   }
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     background-image: url("../img/hero-mobile@2x.jpg");
-    background-size: auto 746px;
+    background-size: auto 373px;
   }
 }
 
 .preview__title {
     width: 100%;
-    padding: 71px 40px 121px 40px;
+    padding: 71px 22px 121px;
 
     font-weight: bold;
 
@@ -55,7 +58,7 @@
     position: relative;
     display: block;
 
-    padding: 27.5px 30px;
+    padding: 26px 29px 29px 29px;
 
     font-size: 19px;
     font-weight: bold;
@@ -64,14 +67,15 @@
     text-decoration: none;
 
     color: $bg-white;
+    transition: all 0.4s;
     &:hover {
       transform: translateY(-5px);
       background-color: #59d5bc;
-      transition: all 0.2s;
+      transition: all 0.4s;
     }
     &:active {
       opacity: 0.3;
-      transition: all 0.2s;
+      transition: all 0.4s;
     }
   }
   &--interior {
@@ -99,16 +103,18 @@
     margin-bottom: 14px;
     width: 100%;
     background-image: url("../img/hero-desktop@1x.jpg");
+    background-position: center -2px;
     &:after {
     content: "";
   }
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("../img/hero-desktop@2x.jpg");
+          background-size: auto 746px;
     }
   }
   .preview__title {
       margin-bottom: 252px;
-      padding-top: 154px;
+      padding-top: 152px;
       h1 {
         width: 500px;
     }
@@ -121,12 +127,20 @@
   }
 
   .preview__list-wrapper {
-    @include container-tablet;
+    width: 768px;
+    margin: 0 auto;
+    padding: 0 34px 0 50px;
   }
   .preview__item {
     a {
-      padding: 29.5px 30px 43px 37px;
+      font-size: 20px;
+      line-height: 28px;
+      padding: 29.5px 30px 37px 37px;
     }
+  }
+  .preview__icon {
+    top: 30px;
+    right: 29px;
   }
 }
 
@@ -134,9 +148,13 @@
 @media (min-width: 1150px) {
   .preview {
     margin-bottom: 6px;
+    &:after {
+      bottom: -10px;
+      background-size: auto 32px;
+    }
   }
   .preview__title {
-    margin-bottom: 237px;
+    margin-bottom: 239px;
     h1 {
       width: 600px;
       font-size: 53px;

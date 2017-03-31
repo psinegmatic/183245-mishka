@@ -3,6 +3,7 @@
   position: relative;
   width: auto;
   margin-bottom: 87px;
+  transition-duration: 0.5s;
   p {
     padding-right: 11px;
     margin-bottom: 24px;
@@ -21,6 +22,7 @@
     background-image: url("../img/bg-zigzag-line.svg");
     background-repeat: repeat-x;
     background-size: auto 6px;
+    transition: all 0.4s;
   }
 }
 
@@ -143,6 +145,8 @@
 
 @media (min-width: 1150px) {
   .reviews {
+    width: 100%;
+    margin: 0 auto;
     margin-bottom: 86px;
     &:after {
       background-size: auto 23px;
@@ -151,9 +155,9 @@
   }
   .reviews__wrapper {
     box-sizing: border-box;
-    padding: 70px 0 80px 175px;
+    padding: 70px 0px 80px 172px;
 
-    @include container-desktop;
+    width: 1050px;
     align-items: flex-start;
   }
   .reviews__title {
