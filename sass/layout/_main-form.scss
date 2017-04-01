@@ -576,6 +576,8 @@ input[type='checkbox']:checked + label::after {
     }
     textarea {
       font-size: 19px;
+      max-height: 144px;
+      min-height: 100px;
     }
   }
   .main-form__input-icon {
@@ -592,7 +594,7 @@ input[type='checkbox']:checked + label::after {
     padding-right: 113px;
     padding-left: 113px;
     button {
-      width: 33.5%;
+      width: 33%;
     }
   }
 }

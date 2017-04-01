@@ -90,7 +90,7 @@
     box-sizing: border-box;
     justify-content: flex-end;
     span {
-      padding-right: 30px;
+      padding-right: 27px;
     }
   }
   .page-footer__logo,
@@ -110,6 +110,7 @@
     margin: o auto;
   }
   .page-footer__wrapper {
+    padding-top: 46px;
     @include container-desktop;
   }
 }
