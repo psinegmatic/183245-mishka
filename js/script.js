@@ -6,6 +6,8 @@ var userBlock = document.querySelector(".user-block");
 var overLay = document.querySelector(".overlay");
 var pageModal = document.querySelector(".page-modal");
 var cartButton = document.querySelectorAll(".btn-buy");
+var writeButton = document.querySelector(".reviews__btn-write");
+var contactsButton = document.querySelector(".contacts__btn");
 
 mainNav.classList.remove("main-nav--nojs");
 mainNav.classList.add("main-nav--closed");
@@ -63,3 +65,11 @@ window.addEventListener("keydown", function(event) {
       }
     }
 });
+
+writeButton.addEventListener("click", function (event) {
+  event.preventDefault();
+})
+
+contactsButton.addEventListener("click", function (event) {
+  event.preventDefault();
+})

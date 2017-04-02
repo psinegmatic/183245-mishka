@@ -1,7 +1,7 @@
 {
-  "name": "mishka",
-  "version": "0.1.0",
-  "private": true,
+  "dependencies": {
+    "del": "^2.2.2"
+  },
   "description": "Личный проект «Мишка» от HTML Academy",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "0.1.x",
@@ -23,11 +23,6 @@
     "run-sequence": "^1.2.2",
     "uglify-js": "^2.8.18"
   },
-  "scripts": {
-    "test": "editorconfig-cli",
-    "build": "gulp build",
-    "start": "npm run build && gulp serve"
-  },
   "editorconfig-cli": [
     "*.html",
     "*.json",
@@ -39,7 +34,11 @@
   "engines": {
     "node": "6.10"
   },
-  "dependencies": {
-    "del": "^2.2.2"
-  }
+  "private": true,
+  "scripts": {
+    "build": "gulp build",
+    "start": "npm run build \u0026\u0026 gulp serve",
+    "test": "editorconfig-cli"
+  },
+  "version": "0.1.0"
 }

@@ -46,22 +46,26 @@
       display: block;
     }
     &--opened {
-      display: block;
       position: absolute;
-      background-color: #ffffff;
+      z-index: 100;
       top: 79px;
       left: 0;
-      z-index: 100;
+
+      display: block;
+
+      background-color: #FFFFFF;
     }
   }
 }
 @media (min-width: 750px) {
   .main-nav {
+    z-index: 10;
+
     display: block;
+
     -webkit-box-ordinal-group: 31;
     -ms-flex-order: 30;
     order: 30;
-    z-index: 10;
   }
   .main-nav__items {
     display: -webkit-box;
@@ -98,9 +102,7 @@
     width: 40%;
 
     -webkit-box-ordinal-group: 11;
-
     -ms-flex-order: 10;
-
     order: 10;
   }
   .main-nav__item {
@@ -131,5 +133,4 @@
       }
     }
   }
-
 }

@@ -4,6 +4,7 @@
 .advantages {
   width: auto;
   margin-bottom: 55px;
+
   transition-duration: 0.5s;
 }
 
@@ -41,30 +42,36 @@
   position: absolute;
   top: -56px;
   left: 4px;
-  fill: #63d1bb;
+
+  fill: #63D1BB;
   &--2 {
     top: -59px;
-    left: 0px;
+    left: 0;
+
     width: 45px;
   }
   &--3 {
     top: -55px;
     left: 7px;
+
     width: 34px;
   }
   &--4 {
     top: -54px;
     left: 4px;
+
     width: 35px;
   }
   &--5 {
     top: -58px;
     left: -5px;
-    width: 52px
+
+    width: 52px;
   }
   &--6 {
     top: -56px;
     left: 3px;
+
     width: 33px;
   }
 }
@@ -72,6 +79,7 @@
 @media (min-width: 750px) {
   .advantages {
     @include container-tablet;
+
     margin-bottom: 83px;
   }
   .advantages__wrapper {
@@ -116,6 +124,7 @@
 @media (min-width: 1150px) {
   .advantages {
     @include container-desktop;
+
     margin-bottom: 88px;
   }
   .advantages__wrapper {

@@ -2,6 +2,8 @@
   display: flex;
 
   justify-content: space-between;
+  padding: 27px 62px 19px 56px;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .social-links__icon {
@@ -11,12 +13,14 @@
 
 @media (min-width: 750px) {
   .social-links {
-    padding: 8px 47px 0px 38px;
+    width: 22%;
+    padding: 8px 16px 0 6px;
   }
 }
 
 @media (min-width: 1150px) {
   .social-links {
-    padding: 15px 113px 7px 104px;
+    width: 14%
+    padding: 15px 9px 7px 0;
   }
 }
