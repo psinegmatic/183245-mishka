@@ -2,10 +2,10 @@
   position: relative;
 
   display: flex;
-
+  box-sizing: border-box;
   width: 100%;
   margin-bottom: 59px;
-
+  padding: 25px 0 31px 0;
   border: $main-border;
 
   flex-wrap: wrap;
@@ -29,15 +29,17 @@
 }
 
 .catalog-promo__title {
-  margin-bottom: 202px;
-  padding-left: 55px;
+  margin-bottom: 23px;
+  padding-left: 89px;
 
   font-size: 17px;
   line-height: 24px;
+  order: 1;
 }
 .catalog-promo__video {
-  position: absolute;
-  top: 100px;
+  position: relative;
+  margin-bottom: 28px;
+  order: 2;
   img {
     vertical-align: middle;
   }
@@ -63,48 +65,54 @@
     opacity: 0.6;
   }
 }
-.catalog-promo__info {
-  padding: 25px 34px 32px 34px;
-}
 .catalog-promo__pic {
   position: absolute;
   top: 27px;
+  left: 34px;
 
   width: 30px;
 
   fill: #63D1BB;
 }
 .catalog-promo__text {
-  margin-bottom: 24px;
+  margin-bottom: 25px;
+  padding: 0 33px;
 
   font-size: 13px;
+  order: 3;
   p {
     padding-right: 14px;
   }
+}
+.catalog-promo__buy-btn {
+  width: 73%;
+  margin: 0 auto;
+  order: 4;
 }
 
 @media (min-width: 750px) {
   .catalog-promo {
     margin-bottom: 64px;
+    padding: 0 0 45px 0;
   }
   .catalog-promo__title {
     position: inherit;
 
     width: 100%;
     margin-bottom: 32px;
-    padding-left: 65px;
+    padding-left: 105px;
 
     font-size: 20px;
 
-    order: 20;
+    order: 2;
   }
   .catalog-promo__video {
     position: static;
 
     width: 100%;
-    padding-top: 0;
+    margin-bottom: 38px;
 
-    order: 10;
+    order: 1;
     picture {
       img {
         width: 668px;
@@ -120,35 +128,36 @@
     top: 199px;
     left: 280px;
   }
-  .catalog-promo__info {
-    padding: 38px 43px 46px 41px;
-
-    order: 30;
-  }
   .catalog-promo__pic {
     top: 484px;
+    left: 42px;
   }
   .catalog-promo__text {
     margin-bottom: 34px;
+    padding: 0 39px;
 
     font-size: 15px;
     line-height: 30px;
+    order: 3;
   }
   .catalog-promo__buy-btn {
-    order: 40;
+    width: 87%;
+    order: 4;
   }
 }
 
 @media (min-width: 1150px) {
   .catalog-promo {
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
     box-sizing: border-box;
-
-    justify-content: flex-end;
+    padding: 96px 57px 60px;
   }
   .catalog-promo__video {
-    box-sizing: border-box;
-    width: 72.5%;
-    padding-right: 80px;
+    position: absolute;
+    left: 0;
+    top: 0;
     picture {
       img {
         width: 682px;
@@ -164,12 +173,14 @@
     left: 296px;
   }
   .catalog-promo__title {
-    box-sizing: border-box;
-    width: 27%;
-    padding-left: 0;
+    width: 20%;
+    padding-left: 0px;
+    padding-right: 45px;
   }
   .catalog-promo__text {
+    width: 24%;
     margin-bottom: 46px;
+    padding: 0px 7px;
   }
   .catalog-promo__info {
     box-sizing: border-box;
@@ -178,5 +189,10 @@
   }
   .catalog-promo__pic {
     top: 37px;
+    left: 762px;
+  }
+  .catalog-promo__buy-btn {
+    width: 24%;
+    margin: 0;
   }
 }
